@@ -1,0 +1,1464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* NAV FIN */
+
+    .estiloNav {
+        background-color: white;
+        height: 200px;
+        position: sticky;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid;
+        color: #014f86;
+    }
+
+    .estiloNavUl {
+
+        list-style-type: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        text-align: center;  
+    }
+    
+    .estiloNavUl li {
+        display: block;
+        padding: 5px;
+    }
+    
+    .estiloNav a {
+        text-decoration: none;
+        color: #014f86;
+        
+    }
+    
+    .logo {
+        height: 50px;
+        width: 75px;
+    }
+
+    .estiloNav a:hover {
+        color: #f7b53b;
+    }
+
+/* NAV FIN */
+
+/* BANNER PRINCIPAL Y H1 INICIO */
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.headerDesign {
+    background-image: url(../img/bannerhome\ 1.jpg);
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+/* BANNER PRINCIPAL Y H1 FIN */
+
+/* BANNER TIROLINA Y H1 INICIO */
+
+.headerDesign2 {
+    background-image: url(../IMG/bannertirolina.jpg);
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* BANNER TIROLINA Y H1 FIN */
+
+/* BANNER TERRAZA Y H1 INICIO */
+
+.headerDesign3 {
+    background-image: url(../IMG/terrazabar.jpeg);
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* BANNER TERRAZA Y H1 FIN */
+
+/* BANNER CABALLOS Y H1 INICIO */
+
+.headerDesign4 {
+    background-image: url(../IMG/paseo.jpg);
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* BANNER CABALLOS Y H1 FIN */
+
+/* BANNER CONTACTO Y H1 INICIO */
+
+.headerDesign5 {
+    background-image: url(../IMG/contacto.jpg);
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* BANNER CONTACTO Y H1 FIN */
+
+
+/* INICIO MAIN HOME */
+
+.main {
+    height: 2000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a1"
+                         "a3"
+                         "a2"
+                         "a4"
+                         "a5"
+                         "a7"
+                         "a6";
+
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-bienvenida {
+    grid-area: a1;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.main-bienvenida h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5rem;
+}
+
+
+.main-bienvenida-h4 {
+    color: #014f86;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.main-bienvenida-parrafo {
+    color: #b1a7a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 2rem;
+    font-weight: 100;
+    
+}
+
+.main-bienvenida-parrafo-dos {
+    color: #b1a7a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-top: 2rem;
+    font-weight: 100;
+}
+
+.main-tirolina-foto {
+    grid-area: a3;
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-tirolina-texto {
+    grid-area: a2;
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-caballos-foto {
+    grid-area: a4;
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-caballos-texto {
+    grid-area: a5;
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-bar-foto {
+    grid-area: a7;
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-bar-texto {
+    grid-area: a6;
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.main h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: center;
+    font-size: 25px;
+}
+
+.main p {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.main img {
+    height: 100%;
+    width: 100%;
+}
+/* FIN MAIN HOME */
+
+/* INICIO MAIN 2 HOME */
+
+.main-home-dos {
+
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    color: #014f86;
+}
+
+.main-boton {
+    width: 50%;
+    text-align: center;
+}   
+
+.boton-reserva {  
+    outline: none; 
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #f7b53b;
+    margin: 1rem;
+    font-size: 15px;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.boton-reserva:hover {
+    color: #014f86;
+}
+
+.main-boton h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    font-size: 25px;
+}
+
+.main-boton p {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+}
+
+.parrafo-tickets {
+    margin-top: 2rem;
+}
+
+.main-boton-foto {
+    width: 50%;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-boton-foto img { 
+    height: 250px;
+    width: 250px;
+    
+}
+
+/* FIN MAIN 2 HOME */
+
+/* INICIO MAPA HOME */
+
+.div-mapa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    align-items: center; 
+    background: linear-gradient(to bottom, #fcff9e 0%, #c67700 100%);
+}
+
+.mapa {
+    width: 80%;
+    height: 80%;  
+    margin-bottom: 2rem; 
+}
+
+.div-mapa h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* FIN MAPA HOME */
+
+/* MAIN TIROLINA INICIO */
+
+.main-tirolina {
+    height: 3500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr 0.75fr 0.5fr;
+    grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4"
+                         "a5"
+                         "a6"
+                         "a7"
+                         "a8";
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.main-tirolina-intro {
+    grid-area: a1;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+.main-tirolina-salto {
+    grid-area: a3;
+    width: 75%;
+}
+
+.main-tirolina-foto-individual {
+    grid-area: a2;
+}
+
+.main-tirolina-foto-tandem {
+    grid-area: a4;
+}
+
+.main-tirolina-tandem {
+    grid-area: a5;
+    width: 75%;
+}
+
+.main-tirolina-requisitos {
+    grid-area: a6;
+    width: 75%;
+}
+
+.main-tirolina-tickets {
+    grid-area: a7;
+    width: 75%;
+    text-align: center;
+}
+
+.main-tirolina-fotos-tickets {
+    grid-area: a8;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 50%;
+    align-items: center;
+    justify-items:flex-start;
+}
+
+.foto-tickets-individual {
+    height: 50%;
+    width: 50%;
+}
+
+.foto-tickets-tandem {
+    height: 50%;
+    width: 50%;
+}
+
+.main-tirolina-fotos-tickets h3 {
+    text-align: center;
+    color: #014f86;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.main-tirolina-fotos-tickets h4 {
+    text-align: center;
+    color: #014f86;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+
+
+.main-tirolina p {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.main-tirolina h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.main-tirolina img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-tirolina h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: center;
+    font-size: 25px;
+}
+
+.ul-tirolina {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.ul-tirolina-dos {
+    margin-left: 2rem;
+}
+
+.ul-tirolina li {
+    margin-top: 0.5rem;
+}
+
+/* GALERIA TIROLINA INICIO */
+
+.main-tirolina-dos {
+    height: 2000px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4"
+                         "a5"
+                         "a6"
+                         "a7";
+   justify-content: space-evenly; 
+   align-items: center;
+   justify-items: center;
+   align-content: center;
+   margin-bottom: 2rem;
+} 
+
+.main-tirolina-dos h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    grid-area: a1;
+}
+
+.imagen-galeria-uno {
+    grid-area: a2;
+}
+
+.imagen-galeria-dos {
+    grid-area: a3;
+}
+
+.imagen-galeria-tres {
+    grid-area: a4;
+}
+
+.imagen-galeria-cuatro {
+    grid-area: a5;
+}
+
+.imagen-galeria-cinco {
+    grid-area: a6;
+}
+
+.imagen-galeria-seis {
+    grid-area: a7;
+}
+
+/* GALERIA TIROLINA FIN */
+
+/* MAIN TIROLINA FIN */
+
+/* INICIO MAIN CABALLOS MOBILE */
+
+.paseo-main {
+    height: 2200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr 1.5fr;
+    justify-content: space-between;
+    grid-template-areas:    "a1"
+                            "a2"
+                            "a3"
+                            "a4"
+                            "a5";
+    align-items: center;    
+    align-content: center; 
+    justify-items: center;
+
+}
+
+.paseo-main-intro {
+    grid-area: a1;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+.paseo-main h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.paseo-main p {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.paseo-main img {
+    height: 100%;
+    width: 100%;
+}
+
+.paseo-imagen-uno {
+    grid-area: a2;
+    width: 50%;
+}
+
+.paseo-main-requisitos {
+    grid-area: a3;
+    width: 50%;
+    margin-top: 5rem;
+}
+
+.ul-caballos {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    font-size: 15px;
+    margin-top: 2rem;
+}
+
+.ul-caballos li {
+    margin-top: 0.5rem;
+}
+
+.paseo-main h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: center;
+    font-size: 25px;
+}
+
+.paseo-main h4 {
+    color: #014f86;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 1rem 0;
+    text-align: center;
+}
+.paseo-reserva {
+    grid-area: a4;
+    width: 75%;
+    text-align: center;
+}
+
+.boton-caballos {
+    margin: 2rem;
+    outline: none; 
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #f7b53b;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.main-caballos-fotos-tickets {
+    grid-area: a5;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 75%;
+    align-items: center;
+    justify-items: center;
+}
+
+.foto-caballos-individual {
+    height: 50%;
+    width: 50%;
+}
+
+.foto-caballos-paquete {
+    height: 50%;
+    width: 50%;
+}
+/* FIN MAIN CABALLOS MOBILE */
+
+/* INICIO MAIN TERRAZA MOBILE */
+
+.main-terraza {
+    height: 2200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4"
+                         "a5"
+                         "a6"
+                         "a7"
+                         "a8";
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-terraza-intro {
+    grid-area: a1;
+    width: 50%;
+    margin-bottom: 5rem;
+}
+
+.main-terraza-bar-texto {
+    grid-area: a3;
+    width: 50%;
+}
+
+.main-terraza-bar-foto {
+    grid-area: a2;
+}
+
+.main-terraza-restaurante-foto {
+    grid-area: a4;
+}
+
+.main-terraza-restaurante-texto {
+    grid-area: a5;
+    width: 50%;
+}
+
+.main-terraza-tragos-texto {
+    grid-area: a7;
+    width: 50%;
+}
+
+.main-terraza-tragos-foto {
+    grid-area: a6;
+}
+
+.main-terraza-eventos {
+    grid-area: a8;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-terraza img {
+    height: 200px;
+    width: 200px;
+}
+
+.main-terraza p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.main-terraza h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.main-terraza h3 {
+    text-align: center;
+    color: #014f86;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.main-terraza button {
+    margin: 3rem 0;
+}
+
+/* FIN MAIN TERRAZA MOBILE */
+
+/* MAIN FORM INICIO MOBILE */
+
+.intro-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.intro-contacto h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.intro-contacto p {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.main-contacto-grid {
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 1fr 1fr;
+   width: 100%;
+   align-items: center;
+   justify-items: center;
+   margin: 5rem 0;
+   gap: 5rem;
+}
+
+.main-contacto-grid h3 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-contacto-izquierda {
+    width: 55%;
+}
+
+.main-contacto-derecha {
+    width: 55%;
+}
+
+.main-contacto-grid ul {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.input-nombre {
+    border: none;
+    background-color: #edede9;
+    height: 2rem;
+    padding-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-email {
+    border: none;
+    background-color: #edede9;
+    height: 2rem;
+    padding-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-telefono {
+    border: none;
+    background-color: #edede9;
+    height: 2rem;
+    padding-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-consulta {
+    border: none;
+    background-color: #edede9;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-boton {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #f7b53b;
+    border-radius: 2px;
+    width: 50%;
+    padding: 0.7rem;
+}
+
+.input-boton:hover {
+    color: #014f86;
+}
+
+/* MAIN FORM FIN MOBILE */
+
+/* FOOTER INICIO */
+
+.footer {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid;
+    color: #014f86;
+}
+
+.logoFooter {
+
+    height: 100px;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footerUno {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    color: #b1a7a6;
+    
+}
+
+.footerDos {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #0077b6;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.footerDos a {
+    display: block;
+    text-decoration: none;
+    color: #b1a7a6;
+}
+
+.footerTres {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color:#b1a7a6;
+    align-items: center; 
+    justify-content: center;
+}
+
+.footerDentroUno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footerDentroUno p {
+
+    width: 90%;
+    padding: 0,5rem;
+    text-align: center;
+}
+
+.footerDentroUno h4 {
+    width: 90%;
+    text-align: center;
+}
+
+.footerDentroDos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerdentroDos h3 {
+    color: #0077b6;
+}
+
+.nosotrosFooter {
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.footerDentroTres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.contactoFooter {
+    margin-bottom: 1rem;
+    font-size: 25px;
+    color:#0077b6;
+}
+
+.footerRedes {
+    align-items: center;
+    justify-items: center;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+i {
+    font-size: 40px;
+    display: inline;
+}
+
+
+/* FOOTER FIN */
+
+
+/* NAV Y LOGO INICIO COMPUTADORA */
+
+@media only screen and ( min-width: 601px){
+
+.estiloNav {
+    height: 150px;
+    flex-direction: row;
+}
+
+.estiloNavUl {
+    font-size: 20px;
+    text-align: right;      
+}
+
+.estiloNavUl li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.logo {
+    height: 100px;
+    width: 150px; 
+}
+
+/* NAV Y LOGO FIN COMPUTADORA */
+
+/* BANNER PRINCIPAL Y H1 INICIO COMPUTADORA */
+
+h1 {
+    font-size: 700;
+}
+
+.headerDesign {
+    height: 450px;
+}
+
+/* BANNER PRINCIPAL Y H1 FIN COMPUTADORA */
+
+/* BANNER TIROLINA Y H1 INICIO */
+
+.headerDesign2 {
+    height: 450px;
+}
+
+/* BANNER TIROLINA Y H1 FIN */
+
+/* BANNER TERRAZA Y H1 INICIO */
+
+.headerDesign3 {
+    height: 450px;
+    width: 100%;
+}
+
+/* BANNER TERRAZA Y H1 FIN */
+
+/* BANNER CABALLOS Y H1 INICIO */
+
+.headerDesign4 {
+    height: 450px;
+}
+
+/* BANNER CABALLOS Y H1 FIN */
+
+/* BANNER CONTACTO Y H1 INICIO */
+
+.headerDesign5 {
+    height: 450px;
+}
+
+/* BANNER CONTACTO Y H1 FIN */
+
+/* INICIO MAIN */
+
+.main { 
+    height: 1500px;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1"
+                         "a2 a3"
+                         "a4 a5"
+                         "a6 a7";
+    justify-content: space-evenly;
+}
+
+.main-bienvenida {
+    width: 75%;
+}
+
+.main-bienvenida h2 {
+    font-size: 45px;
+}
+
+.main-bienvenida-h4 {
+    font-size: 25px;
+    margin-top: 0,5rem;
+}
+
+.main-bienvenida-parrafo {
+    font-size: 20px; 
+}
+
+.main-bienvenida-parrafo-dos {
+    font-size: 20px;
+}
+
+.main-bar-foto {
+    margin-bottom: 100px;
+}
+
+.main-bar-texto {
+    margin-bottom: 100px;
+}
+
+.main h3 {
+    font-size: 30px;
+}
+
+.main p {
+    font-size: 20px;
+}
+/* FIN MAIN */
+
+/* INICIO MAIN 2 HOME*/
+
+.main-home-dos {
+    flex-direction: row;
+    height: 400px;
+} 
+
+.main-boton h3 {
+    font-size: 30px;
+}
+
+.main-boton-foto {
+    display: flex;
+}
+
+.boton-reserva {
+    font-size: 20px;
+    margin: 2rem;
+}
+
+/* FIN MAIN 2 HOME */
+
+/* INICIO MAPA HOME */
+
+.div-mapa h2 {
+    font-size: 45px;
+}
+/* FIN MAPA HOME */
+
+/* MAIN TIROLINA INICIO */
+
+.main-tirolina {
+    height: 2200px;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr;
+    grid-template-areas: "a1 a1"
+                         "a2 a3"
+                         "a4 a5"
+                         "a6 a6"
+                         "a7 a8";
+    justify-content: space-evenly;
+}
+
+.main-tirolina-intro {
+    width: 75%;
+}
+
+.main-tirolina-salto {
+    grid-area: a2;
+    width: 75%;
+}
+
+.main-tirolina-foto-individual {
+    grid-area: a3;
+}
+
+.main-tirolina-tandem {
+    width: 75%;
+}
+
+.main-tirolina-requisitos {
+    width: 60%;
+}
+
+.main-tirolina-tickets {
+    width: 75%;
+}
+
+.main-tirolina-fotos-tickets {
+    flex-direction: row;
+    gap: 2rem;
+    width: 80%;
+}
+
+.foto-tickets-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-tickets-tandem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-tirolina-fotos-tickets img {
+    height: 150px;
+    width: 150px;
+}
+
+.main-tirolina-fotos-tickets h3 {
+    font-size: 30px;
+}
+
+.main-tirolina-fotos-tickets h4 {
+    font-size: 30px;
+}
+
+
+.main-tirolina p {
+    font-size: 20px;
+}
+
+.main-tirolina h2 {
+    font-size: 45px;
+}
+
+.main-tirolina h3 {
+    font-size: 30px;
+}
+
+.ul-tirolina {
+    font-size: 20px;
+}
+
+/* GALERIA TIROLINA INICIO */
+
+.main-tirolina-dos {
+    height: 1000px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas: "a1 a1 a1"
+                         "a2 a3 a4"
+                         "a5 a6 a7";
+} 
+
+.main-tirolina-dos h2 {
+    font-size: 45px;
+}
+
+/* GALERIA TIROLINA FIN */
+
+/* MAIN TIROLINA FIN */
+
+/* INICIO MAIN CABALLOS PC */
+
+.paseo-main {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
+    grid-template-areas:    "a1 a1"
+                            "a2 a2"
+                            "a3 a3"
+                            "a4 a5";
+}
+
+.paseo-main h2 {
+    font-size: 45px;
+}
+
+.paseo-main p {
+    font-size: 20px;
+}
+
+.paseo-main img {
+    margin: 1rem 0;
+}
+
+.paseo-imagen-uno {
+    width: 80%;
+    height: 100%;
+}
+
+.paseo-main-requisitos {
+    width: 60%;
+}
+
+.ul-caballos {
+    font-size: 20px;
+}
+
+.paseo-main h3 {
+    font-size: 30px;
+}
+
+.paseo-main h4 {
+    font-size: 20px;
+}
+.paseo-reserva {
+    grid-area: a4;
+}
+
+.main-caballos-fotos-tickets {
+    grid-area: a5;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+}
+
+.foto-caballos-individual {
+    width: 300px;
+    height: 300px;
+}
+
+.foto-caballos-paquete {
+    width: 300px;
+    height: 300px;
+}
+
+.main-caballos-fotos-tickets img {
+    width: 180px;
+    height: 180px;
+}
+/* FIN MAIN CABALLOS PC */
+
+/* INICIO MAIN TERRAZA PC */
+
+.main-terraza {
+    height: 2000px;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a1 a1"
+                         "a2 a3"
+                         "a4 a5"
+                         "a6 a7"
+                         "a8 a8";
+}
+
+.main-terraza-intro {
+    width: 75%;
+}
+
+.main-terraza-bar-texto {
+    grid-area: a2;
+    width: 75%;
+}
+
+.main-terraza-bar-foto {
+    grid-area: a3;
+}
+
+.main-terraza-restaurante-texto {
+    width: 75%;
+}
+
+.main-terraza-tragos-texto {
+    grid-area: a6;
+    width: 75%;
+}
+
+.main-terraza-tragos-foto {
+    grid-area: a7;
+}
+
+.main-terraza-eventos {
+    width: 60%;
+}
+
+.main-terraza img {
+    height: 300px;
+    width: 300px;
+}
+
+.main-terraza p {
+    font-size: 20px;
+}
+
+.main-terraza h2 {
+    font-size: 45px;
+}
+
+.main-terraza h3 {
+    margin-bottom: 3rem;
+    font-size: 30px;
+}
+
+/* FIN MAIN TERRAZA PC */
+
+/* MAIN FORM INICIO PC */
+
+.intro-contacto h2 {
+    font-size: 45px;
+}
+
+.intro-contacto p {
+    font-size: 20px;
+    width: 100%;
+}
+
+.main-contacto-grid {
+   grid-template-columns: 45% 45%;
+   grid-template-rows: 1fr;
+   align-items:flex-start;
+}
+
+.main-contacto-grid h3 {
+    font-size: 30px;
+}
+
+.main-contacto-grid ul {
+    font-size: 15px;
+}
+
+.input-boton {
+    width: 40%; 
+    padding: 0.7rem;
+    font-size: 15px;
+}
+
+/* MAIN FORM FIN PC */
+
+/* FOOTER INICIO */
+
+.footer {
+    height: 250px;
+    flex-direction: row; 
+}
+
+.footerUno {
+    width: 480px;
+    align-items: left;
+}
+
+.footerDos {
+    height: 100%;
+    width: 480px; 
+}
+
+.footerTres {
+    width: 480px;
+    color:#b1a7a6;   
+}
+
+.footerDentroUno h4 {
+    text-align: center;
+}
+
+}
+/* FOOTER FIN */
+
