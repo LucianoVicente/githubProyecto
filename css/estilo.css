@@ -59,12 +59,9 @@ h1 {
 }
 
 .headerDesign {
-    background-image: url(../img/bannerhome\ 1.jpg);
-    display: flex;
+    background-image: url(../img/bannerHome.png);
     height: 300px;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     
@@ -76,11 +73,8 @@ h1 {
 
 .headerDesign2 {
     background-image: url(../IMG/bannertirolina.jpg);
-    display: flex;
     height: 300px;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -90,7 +84,7 @@ h1 {
 /* BANNER TERRAZA Y H1 INICIO */
 
 .headerDesign3 {
-    background-image: url(../IMG/terrazabar.jpeg);
+    background-image: url(../IMG/bannerT.png);
     display: flex;
     height: 300px;
     width: 100%;
@@ -105,12 +99,9 @@ h1 {
 /* BANNER CABALLOS Y H1 INICIO */
 
 .headerDesign4 {
-    background-image: url(../IMG/paseo.jpg);
-    display: flex;
+    background-image: url(../IMG/bannerCaballos.png);
     height: 300px;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -120,12 +111,9 @@ h1 {
 /* BANNER CONTACTO Y H1 INICIO */
 
 .headerDesign5 {
-    background-image: url(../IMG/contacto.jpg);
-    display: flex;
+    background-image: url(../IMG/bannerContacto.png);
     height: 300px;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -674,10 +662,10 @@ h1 {
 /* INICIO MAIN TERRAZA MOBILE */
 
 .main-terraza {
-    height: 2200px;
+    height: 3000px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "a1"
                          "a2"
                          "a3"
@@ -685,56 +673,94 @@ h1 {
                          "a5"
                          "a6"
                          "a7"
-                         "a8";
+                         "a8"
+                         "a9"
+                         "a10";
     justify-items: center;
-    align-items: center;
-    justify-content: space-evenly;
+}
+
+.div-desayunos {
+    display: none;
+}
+
+.div-restaurante {
+    display: none;
 }
 
 .main-terraza-intro {
     grid-area: a1;
-    width: 50%;
-    margin-bottom: 5rem;
+    width: 80%;
 }
 
-.main-terraza-bar-texto {
-    grid-area: a3;
-    width: 50%;
-}
-
-.main-terraza-bar-foto {
+.main-terraza-desayunos {
     grid-area: a2;
+    width: 80%;
+    background-image: url(../img/fotodesa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.main-terraza-restaurante-foto {
-    grid-area: a4;
+.main-terraza-desayunos-texto {
+    grid-area: a3;
 }
 
 .main-terraza-restaurante-texto {
     grid-area: a5;
-    width: 50%;
 }
 
-.main-terraza-tragos-texto {
+.main-terraza-copas-texto {
     grid-area: a7;
-    width: 50%;
 }
 
-.main-terraza-tragos-foto {
+.main-terraza-postres-texto {
+    grid-area: a9;
+}
+
+.main-terraza-food {
+    grid-area: a4;
+    width: 80%;
+    background-image: url(../img/fotorest.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-terraza-bebidas {
     grid-area: a6;
+    width: 80%;
+    background-image: url(../img/fotocopas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-terraza-postres {
+    grid-area: a8;
+    width: 80%;
+    background-image: url(../img/fotopostre.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-terraza-eventos {
-    grid-area: a8;
-    width: 50%;
+    grid-area: a10;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main-terraza img {
-    height: 200px;
-    width: 200px;
+.main-terraza-texto-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-terraza-texto-mobile a {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    font-size: 15px;
 }
 
 .main-terraza p {
@@ -750,7 +776,7 @@ h1 {
     font-weight: 900;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -758,7 +784,6 @@ h1 {
     text-align: center;
     color: #014f86;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 1rem;
     font-size: 25px;
 }
 
@@ -1042,7 +1067,7 @@ h1 {
 }
 
 .headerDesign {
-    height: 450px;
+    height: 500px;
 }
 
 /* BANNER PRINCIPAL Y H1 FIN COMPUTADORA */
@@ -1050,7 +1075,7 @@ h1 {
 /* BANNER TIROLINA Y H1 INICIO */
 
 .headerDesign2 {
-    height: 450px;
+    height: 500px;
 }
 
 /* BANNER TIROLINA Y H1 FIN */
@@ -1058,7 +1083,7 @@ h1 {
 /* BANNER TERRAZA Y H1 INICIO */
 
 .headerDesign3 {
-    height: 450px;
+    height: 500px;
     width: 100%;
 }
 
@@ -1067,7 +1092,7 @@ h1 {
 /* BANNER CABALLOS Y H1 INICIO */
 
 .headerDesign4 {
-    height: 450px;
+    height: 500px;
 }
 
 /* BANNER CABALLOS Y H1 FIN */
@@ -1075,7 +1100,7 @@ h1 {
 /* BANNER CONTACTO Y H1 INICIO */
 
 .headerDesign5 {
-    height: 450px;
+    height: 500px;
 }
 
 /* BANNER CONTACTO Y H1 FIN */
@@ -1340,66 +1365,138 @@ h1 {
 /* INICIO MAIN TERRAZA PC */
 
 .main-terraza {
-    height: 2000px;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a1 a1"
-                         "a2 a3"
-                         "a4 a5"
-                         "a6 a7"
-                         "a8 a8";
+    height: 4000px;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "a1"
+                         "a2"
+                         "a3"
+                         "a4"
+                         "a5"
+                         "a6";
+    justify-content: center;
 }
 
 .main-terraza-intro {
-    width: 75%;
+    width: 80%;
 }
 
-.main-terraza-bar-texto {
-    grid-area: a2;
-    width: 75%;
+.main-terraza-intro p {
+    font-size: 25px;
+    margin-top: 2rem;
+}
+.main-terraza-desayunos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-.main-terraza-bar-foto {
+.div-desayunos {
+    height: 350px;
+    width: 350px;
+    background-color: #233d4d;
+    margin-right: 7rem;
+    border: 5px solid;
+    color: #011627;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-terraza-food {
     grid-area: a3;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.main-terraza-restaurante-texto {
-    width: 75%;
+.div-restaurante {
+    height: 350px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 7rem;
+    border: 5px solid;
+    color: #011627;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main-terraza-tragos-texto {
-    grid-area: a6;
-    width: 75%;
+.div-restaurante p {
+    color: #233d4d; 
+    font-size: 20px;
+    width: 65%;
+    margin-top: 1rem;
 }
 
-.main-terraza-tragos-foto {
-    grid-area: a7;
+.main-terraza-bebidas {
+    grid-area: a4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.main-terraza-postres {
+    grid-area: a5;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .main-terraza-eventos {
-    width: 60%;
+    grid-area: a6;
+    margin-top: 2rem;
 }
 
-.main-terraza img {
-    height: 300px;
-    width: 300px;
+.main-terraza-eventos p {
+    font-size: 22px;
+    margin-top: 2rem;
 }
 
-.main-terraza p {
+.div-desayunos p {
     font-size: 20px;
+    width: 70%;
+    color: white;
+    margin-top: 1rem;
 }
 
 .main-terraza h2 {
     font-size: 45px;
 }
 
-.main-terraza h3 {
-    margin-bottom: 3rem;
+.div-desayunos h3 {
+    margin-top: 3rem;
     font-size: 30px;
+    color: white;
+}
+
+.div-restaurante h3 {
+    margin-top: 3rem;
+    font-size: 30px;
+    color: #233d4d;
+}
+
+.a-izq {
+    color: #233d4d; 
+    font-size: 20px;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.a-der {
+    color: white; 
+    font-size: 20px;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-terraza-texto-mobile {
+    display: none;
 }
 
 /* FIN MAIN TERRAZA PC */
-
+fcca46
 /* MAIN FORM INICIO PC */
 
 .intro-contacto h2 {
