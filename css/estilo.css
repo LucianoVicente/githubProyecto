@@ -8,7 +8,7 @@
 
     .estiloNav {
         background-color: white;
-        height: 200px;
+        height: 250px;
         position: sticky;
         top: 0px;
         display: flex;
@@ -25,6 +25,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
         text-align: center;  
+        padding-left: 0rem;
     }
     
     .estiloNavUl li {
@@ -59,39 +60,49 @@ h1 {
 }
 
 .headerDesign {
-    background-image: url(../img/bannerHome.png);
+    height: 300px;
+    width: 100%;  
+}
+
+.headerDesign img {
+    height: 300px;
+}
+
+.contenedor-carousel {
+    padding: 0;
+}
+
+.carousel-banner {
     height: 300px;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 }
 
 /* BANNER PRINCIPAL Y H1 FIN */
 
 /* BANNER TIROLINA Y H1 INICIO */
 
-.headerDesign2 {
-    background-image: url(../IMG/bannertirolina.jpg);
+.headerDesign2 img {
     height: 300px;
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.headerDesign2 {
+    padding: 0;
 }
 
 /* BANNER TIROLINA Y H1 FIN */
 
 /* BANNER TERRAZA Y H1 INICIO */
 
-.headerDesign3 {
-    background-image: url(../IMG/bannerT.png);
-    display: flex;
-    height: 300px;
+.headerDesign3 img {
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 300px;
+    object-fit: cover;
+}
+
+.headerDesign3 {
+    padding: 0;
 }
 
 /* BANNER TERRAZA Y H1 FIN */
@@ -314,47 +325,69 @@ h1 {
 
 /* FIN MAIN 2 HOME */
 
-/* INICIO MAPA HOME */
+/* MAIN TIROLINA INICIO */
 
-.div-mapa {
+.main-tirolina-salto {
+    background-image: url(../img/individual1.png);
+    height: 300px;
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-tirolina-tandem {
+    background-image: url(../img/tandem2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 80%;
+}
+
+.main-tirolina-texto {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 400px;
-    align-items: center; 
-    background: linear-gradient(to bottom, #fcff9e 0%, #c67700 100%);
-}
-
-.mapa {
+    align-items: center;
     width: 80%;
-    height: 80%;  
-    margin-bottom: 2rem; 
+    justify-content: center;
 }
 
-.div-mapa h2 {
+.main-div-tirolina {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-tirolina-intro {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-tirolina-intro h2 {
     color: #014f86;
     font-weight: 900;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
-/* FIN MAPA HOME */
 
-/* MAIN TIROLINA INICIO */
+.main-tirolina-intro p {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    text-align: center;
+    font-size: 15px;
+}
 
 .main-tirolina {
-    height: 3500px;
-    width: 100%;
+    height: 1800px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr 0.75fr 0.5fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3"
-                         "a4"
-                         "a5"
-                         "a6"
+    grid-template-rows:  1.5fr 0.75fr 0.5fr;
+    grid-template-areas: "a6"
                          "a7"
                          "a8";
     align-content: center;
@@ -362,30 +395,6 @@ h1 {
     align-items: center;
     justify-items: center;
 
-}
-
-.main-tirolina-intro {
-    grid-area: a1;
-    width: 75%;
-    margin-bottom: 2rem;
-}
-
-.main-tirolina-salto {
-    grid-area: a3;
-    width: 75%;
-}
-
-.main-tirolina-foto-individual {
-    grid-area: a2;
-}
-
-.main-tirolina-foto-tandem {
-    grid-area: a4;
-}
-
-.main-tirolina-tandem {
-    grid-area: a5;
-    width: 75%;
 }
 
 .main-tirolina-requisitos {
@@ -397,6 +406,10 @@ h1 {
     grid-area: a7;
     width: 75%;
     text-align: center;
+}
+
+.card-tickets {
+    border: none;
 }
 
 .main-tirolina-fotos-tickets {
@@ -479,62 +492,6 @@ h1 {
 .ul-tirolina li {
     margin-top: 0.5rem;
 }
-
-/* GALERIA TIROLINA INICIO */
-
-.main-tirolina-dos {
-    height: 2000px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3"
-                         "a4"
-                         "a5"
-                         "a6"
-                         "a7";
-   justify-content: space-evenly; 
-   align-items: center;
-   justify-items: center;
-   align-content: center;
-   margin-bottom: 2rem;
-} 
-
-.main-tirolina-dos h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    grid-area: a1;
-}
-
-.imagen-galeria-uno {
-    grid-area: a2;
-}
-
-.imagen-galeria-dos {
-    grid-area: a3;
-}
-
-.imagen-galeria-tres {
-    grid-area: a4;
-}
-
-.imagen-galeria-cuatro {
-    grid-area: a5;
-}
-
-.imagen-galeria-cinco {
-    grid-area: a6;
-}
-
-.imagen-galeria-seis {
-    grid-area: a7;
-}
-
-/* GALERIA TIROLINA FIN */
 
 /* MAIN TIROLINA FIN */
 
@@ -665,7 +622,7 @@ h1 {
     height: 3000px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "a1"
                          "a2"
                          "a3"
@@ -689,7 +646,7 @@ h1 {
 
 .main-terraza-intro {
     grid-area: a1;
-    width: 80%;
+    width: 80%;  
 }
 
 .main-terraza-desayunos {
@@ -818,7 +775,7 @@ h1 {
     color: #b1a7a6;
     text-align: center;
     font-size: 15px;
-    margin-top: 1rem;
+   
     width: 50%;
 }
 
@@ -913,6 +870,60 @@ h1 {
 
 /* MAIN FORM FIN MOBILE */
 
+/* INICIO FAQ */
+
+.acordion {
+    width: 100%;
+}
+
+.faq {
+    margin: 2rem
+}
+
+.faq h3 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.accordion-body {
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+/* FIN FAQ */
+
+/* INICIO MAPA CONTACTO */
+
+.div-mapa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    align-items: center; 
+    background: linear-gradient(to bottom, #fcff9e 0%, #c67700 100%);
+}
+
+.mapa {
+    width: 80%;
+    height: 80%;  
+    margin-bottom: 2rem; 
+}
+
+.div-mapa h2 {
+    color: #014f86;
+    font-weight: 900;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* FIN MAPA CONTACTO */
+
 /* FOOTER INICIO */
 
 .footer {
@@ -926,8 +937,8 @@ h1 {
 
 .logoFooter {
 
-    height: 100px;
-    width: 150px;
+    height: 80px;
+    width: 110px;
     margin-bottom: 1rem;
 }
 
@@ -975,19 +986,19 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+   
 }
 
 .footerDentroUno p {
-
     width: 90%;
-    padding: 0,5rem;
     text-align: center;
+    font-size: 15px;
 }
 
 .footerDentroUno h4 {
     width: 90%;
     text-align: center;
+    font-size: 15px;
 }
 
 .footerDentroDos {
@@ -1000,6 +1011,9 @@ h1 {
     color: #0077b6;
 }
 
+.footerdentroDos a {
+    font-size: 15px;
+}
 .nosotrosFooter {
     margin-bottom: 1rem;
     font-size: 25px;
@@ -1020,7 +1034,6 @@ h1 {
 .footerRedes {
     align-items: center;
     justify-items: center;
-    margin-top: 1rem;
     display: flex;
     gap: 1rem;
 }
@@ -1070,11 +1083,20 @@ h1 {
     height: 500px;
 }
 
+.headerDesign img {
+    height: 500px;
+}
+
+.carousel-banner {
+    height: 500px;
+    width: 100%;
+}
+
 /* BANNER PRINCIPAL Y H1 FIN COMPUTADORA */
 
 /* BANNER TIROLINA Y H1 INICIO */
 
-.headerDesign2 {
+.headerDesign2 img {
     height: 500px;
 }
 
@@ -1082,9 +1104,8 @@ h1 {
 
 /* BANNER TERRAZA Y H1 INICIO */
 
-.headerDesign3 {
+.headerDesign3 img {
     height: 500px;
-    width: 100%;
 }
 
 /* BANNER TERRAZA Y H1 FIN */
@@ -1187,33 +1208,69 @@ h1 {
 
 /* MAIN TIROLINA INICIO */
 
-.main-tirolina {
-    height: 2200px;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 1fr 1fr 1fr 1.5fr 1fr;
-    grid-template-areas: "a1 a1"
-                         "a2 a3"
-                         "a4 a5"
-                         "a6 a6"
-                         "a7 a8";
-    justify-content: space-evenly;
-}
-
-.main-tirolina-intro {
-    width: 75%;
+.main-tirolina-texto {
+    display: none;
 }
 
 .main-tirolina-salto {
-    grid-area: a2;
-    width: 75%;
+    height: 650px;
+    width: 100% ;
+    background-image: url(../img/individual1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-.main-tirolina-foto-individual {
-    grid-area: a3;
+.carta-individual {
+    margin-right: 5rem;
 }
 
 .main-tirolina-tandem {
-    width: 75%;
+    background-image: url(../img/tandem2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.carta-tandem {
+    margin-left: 5rem;
+}
+
+.main-tirolina-intro {
+    height: 300px;
+}
+
+.main-tirolina-intro h2 {
+    font-size: 45px;
+}
+
+.main-tirolina-intro p {
+    font-size: 20px; 
+}
+
+.main-tirolina-salto {
+    background-image: url(../img/individual1.png);
+}
+
+.main-tirolina-tandem {
+    background-image: url(../img/tandem2.png);
+}
+
+
+.main-tirolina {
+    height: 1200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1.5fr 1fr;
+    grid-template-areas: "a6 a6"
+                         "a7 a8";
+    justify-content: space-evenly;
 }
 
 .main-tirolina-requisitos {
@@ -1221,7 +1278,7 @@ h1 {
 }
 
 .main-tirolina-tickets {
-    width: 75%;
+    width: 50%;
 }
 
 .main-tirolina-fotos-tickets {
@@ -1240,11 +1297,6 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.main-tirolina-fotos-tickets img {
-    height: 150px;
-    width: 150px;
 }
 
 .main-tirolina-fotos-tickets h3 {
@@ -1274,17 +1326,20 @@ h1 {
 
 /* GALERIA TIROLINA INICIO */
 
-.main-tirolina-dos {
-    height: 1000px;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 0.5fr 1fr 1fr;
-    grid-template-areas: "a1 a1 a1"
-                         "a2 a3 a4"
-                         "a5 a6 a7";
-} 
+.section-carousel {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
-.main-tirolina-dos h2 {
-    font-size: 45px;
+.carousel-galeria {
+    display: flex;
+    justify-content: center;
+}
+.carousel-tirolina {
+    height: 405px;
+    width: 605px;
 }
 
 /* GALERIA TIROLINA FIN */
@@ -1300,6 +1355,7 @@ h1 {
                             "a2 a2"
                             "a3 a3"
                             "a4 a5";
+    
 }
 
 .paseo-main h2 {
@@ -1336,6 +1392,10 @@ h1 {
 }
 .paseo-reserva {
     grid-area: a4;
+}
+
+.reserva-caballo {
+    margin: 0;
 }
 
 .main-caballos-fotos-tickets {
@@ -1378,6 +1438,7 @@ h1 {
 
 .main-terraza-intro {
     width: 80%;
+    margin-top: 2rem;
 }
 
 .main-terraza-intro p {
@@ -1480,14 +1541,12 @@ h1 {
 .a-izq {
     color: #233d4d; 
     font-size: 20px;
-    margin-top: 2rem;
     font-family: 'Roboto', sans-serif;
 }
 
 .a-der {
     color: white; 
     font-size: 20px;
-    margin-top: 2rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -1528,6 +1587,25 @@ fcca46
     font-size: 15px;
 }
 
+/* INICIO FAQ */
+
+.acordion {
+    width: 50%;
+}
+
+.faq h3 {
+    font-size: 30px;
+}
+
+.accordion-body {
+    font-size: 15px;
+}
+
+.faq button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
 /* MAIN FORM FIN PC */
 
 /* FOOTER INICIO */
@@ -1540,22 +1618,29 @@ fcca46
 .footerUno {
     width: 480px;
     align-items: left;
+    padding: 0;
 }
 
 .footerDos {
     height: 100%;
     width: 480px; 
+    padding: 0;
 }
 
 .footerTres {
     width: 480px;
-    color:#b1a7a6;   
+    color:#b1a7a6;  
+    padding: 0; 
 }
 
 .footerDentroUno h4 {
     text-align: center;
+    font-size: 18px;
+}
+
+.contactoFooterParrafo {
+    margin-bottom: 0;
 }
 
 }
 /* FOOTER FIN */
-

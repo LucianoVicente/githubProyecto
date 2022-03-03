@@ -8,6 +8,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <title>Document</title>
   </head>
   <body>
     <header>
-      <div class="estiloNav">
+      <div class="estiloNav text-center">
         <img src="../img/logo.png" alt="LOGO" class="logo" />
 
         <nav>
@@ -76,15 +87,159 @@
 
           <section>
             <form action="" class="main-contacto-form">
-              <input type="text" placeholder="Nombre" class="input-nombre"/>
-              <input type="text" placeholder="Email" class="input-email"/>
-              <input type="text" placeholder="Teléfono" class="input-telefono"/>
-              <textarea cols="30" rows="10" placeholder="Escribe tu consulta" class="input-consulta"></textarea>
-              <input type="submit" value="Enviar consulta" class="input-boton"/>
+              <input type="text" placeholder="Nombre" class="input-nombre" />
+              <input type="text" placeholder="Email" class="input-email" />
+              <input
+                type="text"
+                placeholder="Teléfono"
+                class="input-telefono"
+              />
+              <textarea
+                cols="30"
+                rows="10"
+                placeholder="Escribe tu consulta"
+                class="input-consulta"
+              ></textarea>
+              <input
+                type="submit"
+                value="Enviar consulta"
+                class="input-boton"
+              />
             </form>
           </section>
         </div>
       </div>
+
+      <section class="faq">
+        <div class="container acordion">
+          <h3>FAQ</h3>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                ¿Con cuanto tiempo de antelación debo estar allí?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Debes estar aquí al menos 20 minutos antes de la hora de tu salto.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  ¿Debo reservar mi lugar en la web o puedo adquirir el ticket en taquilla?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Recomendamos reservar por la web debido a que contamos con cupos limitados y al presentarse sin tickets puede que no encuentres lugar o debas esperar para poder saltar.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  ¿Cuál es la edad o el peso mínimo?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  La edad mínima aproximada es de 8 años, pero lo más importante es el peso, cual debe ser de mínimo 50 kilos. 
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                ¿Cómo vuelvo al punto de inicio luego de saltar?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Una vez realices el salto, te volvemos a traer al punto de inicio en nuestro Land Rover.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                ¿Puedo realizar una celebración, comunión o evento en el parque?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Puedes realizar todo tipo de evento en nuestro parque, incluyendo las actividades y la comida. Para gestionar tu reserva, debes comunicarte a comercial@sunviewpark.com
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <div class="div-mapa">
         <h2>Cómo llegar a Sunview Park</h2>

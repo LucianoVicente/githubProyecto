@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,51 +37,65 @@
         </nav>
       </div>
 
-      <div class="headerDesign2"></div>
+      <div class="headerDesign2 container-fluid">
+        <img src="../img/bannerTirolina.png" alt="" class="img-fluid">
+      </div>
     </header>
 
     <main>
-      <div class="main-tirolina">
-        <section class="main-tirolina-intro">
-          <h2>Nuestra Tirolina</h2>
-          <p>
+      <div class="main-div-tirolina">
+        <div class="main-tirolina-intro">
+          <h2 class="text-center">Nuestra Tirolina</h2>
+          <p class="text-center">
             Con 1.350 metros de recorrido a una velocidad máxima de 100 Km/hora
             y con un desnivel aproximado del 10%, es la tirolina doble más larga
             de Andalucía. Una experiencia única e inigualable en un entorno
             mágico entre la montaña y el mar.
           </p>
+        </div>
+      </div>
+
+        <section class="main-tirolina-salto container-fluid">
+          <div class="card carta-individual carta-individual-mobile sm" style="width: 18rem;">
+            <div class="card-body bg-dark text-white">
+              <h5 class="card-title">Salto Individual</h5>
+              <p class="card-text">Con el salto Superman, podrás disfrutar de la máxima adrenalina, mientras disfrutas de las increíbles vistas a la bahía de Málaga.</p>
+              <a href="#" class="btn btn-light">COMPRAR TICKETS</a>
+            </div>
+          </div>
         </section>
 
-        <section class="main-tirolina-salto">
-          <h3>Salto Superman</h3>
-          <p>
-            Si siempre quisiste sentirte como Superman, esta es tu oportunidad.
-            Con el salto de Superman desde la tirolina Sunview Park podrás
-            sentir lo que es volar por la llanura de la Hoya de Málaga, sus
-            montes y la vega de Guadalhorce y siempre podrás realizar el salto
-            solo o acompañado, nuestra tirolina doble te ofrece la alternativa
-            de compartir momentos especiales.
-          </p>
+         <!-- inicio seccion texto 1 solo de mobile -->
+
+         <section class="main-tirolina-texto-invididual main-tirolina-texto">
+          <h3>SALTO SUPERMAN</h3>
+          <p>CCon el salto Superman, podrás disfrutar de la máxima adrenalina, mientras disfrutas de las increíbles vistas a la bahía de Málaga.</p>
+          <a href="" class="">Comprar tickets</a>
         </section>
 
-        <section class="main-tirolina-foto-individual">
-          <img src="../img/tirolina1.png" alt="salto individual" />
-        </section>
-
-        <section class="main-tirolina-foto-tandem">
-          <img src="../img/tirolina2.png" alt="salto tandem" />
-        </section>
+         <!-- fin seccion texto 1 solo de mobile -->
 
         <section class="main-tirolina-tandem">
-          <h3>Salto Tándem</h3>
-          <p>¿Quieres compartir una aventura con una persona especial?</p>
-          <p>¿Sentir vuestra liberación de adrenalina juntos?</p>
-          <p>
-            Con la tirolina de Sunview Park podrás realizar el salto acompañado,
-            somos la tirolina doble más larga de Andalucía.
-          </p>
+         <div class="card carta-tandem " style="width: 18rem;">
+          <div class="card-body bg-dark text-white">
+            <h5 class="card-title">Salto Tandem</h5>
+            <p class="card-text">Con el salto Superman, podrás disfrutar de la máxima adrenalina, mientras disfrutas de las increíbles vistas a la bahía de Málaga.</p>
+            <a href="#" class="btn btn-light">COMPRAR TICKETS</a>
+          </div>
+         </div>
         </section>
 
+      <!-- inicio seccion texto 2 solo de mobile -->
+
+        <section class="main-tirolina-texto-tandem main-tirolina-texto">
+          <h3>SALTO TANDEM</h3>
+          <p>Con la tirolina de Sunview Park podrás realizar el salto acompañado, somos la tirolina doble más larga de Andalucía.</p>
+          <a href="" class="">Comprar tickets</a>
+        </section>
+
+       <!-- fin seccion texto 2 solo de mobile -->
+
+      <div class="main-tirolina container">
         <section class="main-tirolina-requisitos">
           <h2>Requisitos</h2>
           <ul class="ul-tirolina">
@@ -121,62 +137,58 @@
         </section>
 
         <section class="main-tirolina-tickets">
-          <h3>Adquiere tus tickets</h3>
-          <p class="parrafo-tickets">
-            * Descuentos: descuento de 5% aplicado a grupos de 6 a 10 personas.
-          </p>
-          <p>* Descuento de 10% a grupos a partir de 10 personas.</p>
-          <button class="boton-reserva">Reservar ahora</button>
+          <div class="card text-center card-tickets" style="width: 22rem;">
+            <div class="card-body">
+              <h3 class="card-title">Adquiere tu entrada</h3>
+              <p class="card-text">*Descuentos a partir de 6 personas.</p>
+              <p class="card-text">Elige la modalidad de salto.</p>
+              <a href="#" class="btn btn-primary">RESERVAR TICKETS</a>
+            </div>
+          </div>
         </section>
 
         <section class="main-tirolina-fotos-tickets">
-          <article class="foto-tickets-individual">
-            <h3>Superman</h3>
-            <img src="../img/150px.png" alt="individual" />
-            <h4>26€</h4>
-          </article>
-
-          <article class="foto-tickets-tandem">
-            <h3>Tándem</h3>
-            <img src="../img/150px2.png" alt="tandem" />
-            <h4>48€</h4>
-          </article>
+          <div class="card border-light bg-transparent" style="width: 18rem;">
+            <img src="../img/main-tirolina.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Salto Individual</h5>
+              <p class="card-text text-center">26€</p>
+            </div>
+          </div>
+          <div class="card border-light bg-transparent" style="width: 18rem;">
+            <img src="../img/adquiereEntrada.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Salto Tándem</h5>
+              <p class="card-text text-center">48€</p>
+            </div>
+          </div>
         </section>
       </div>
 
-      <div class="main-tirolina-dos">
-        <h2>Galería</h2>
-        <img
-          src="../img/galeria1.png"
-          alt="galeria1"
-          class="imagen-galeria-uno"
-        />
-        <img
-          src="../img/galeria2.png"
-          alt="galeria2"
-          class="imagen-galeria-dos"
-        />
-        <img
-          src="../img/galeria3.png"
-          alt="galeria3"
-          class="imagen-galeria-tres"
-        />
-        <img
-          src="../img/galeria4.png"
-          alt="galeria4"
-          class="imagen-galeria-cuatro"
-        />
-        <img
-          src="../img/galeria5.png"
-          alt="galeria5"
-          class="imagen-galeria-cinco"
-        />
-        <img
-          src="../img/galeria6.png"
-          alt="galeria6"
-          class="imagen-galeria-seis"
-        />
-      </div>
+       <section class="section-carousel">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide container carousel-galeria" data-bs-ride="carousel">
+          <div class="carousel-inner carousel-tirolina">
+            <div class="carousel-item active">
+              <img src="../img/c1.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/c2.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="../img/c3.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+         </div>
+        </div>
+      </section>
+    
     </main>
 
     <footer class="footer">
