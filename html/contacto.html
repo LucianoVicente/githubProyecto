@@ -31,7 +31,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="mx-2">
       <div class="estiloNav text-center">
         <img src="../img/logo.png" alt="LOGO" class="logo" />
 
@@ -49,7 +49,7 @@
       <div class="headerDesign5"></div>
     </header>
 
-    <main>
+    <main class="mx-2">
       <div class="intro-contacto">
         <h2>Contacto</h2>
         <p>
@@ -112,7 +112,7 @@
 
       <section class="faq">
         <div class="container acordion">
-          <h3>FAQ</h3>
+          <h3>Faq</h3>
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -193,17 +193,17 @@
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
+                  data-bs-target="#flush-collapseFour"
                   aria-expanded="false"
-                  aria-controls="flush-collapseOne"
+                  aria-controls="flush-collapseFour"
                 >
                 ¿Cómo vuelvo al punto de inicio luego de saltar?
                 </button>
               </h2>
               <div
-                id="flush-collapseOne"
+                id="flush-collapseFour"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingOne"
+                aria-labelledby="flush-headingFour"
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
@@ -218,17 +218,17 @@
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne"
+                  data-bs-target="#flush-collapseFive"
                   aria-expanded="false"
-                  aria-controls="flush-collapseOne"
+                  aria-controls="flush-collapseFive"
                 >
                 ¿Puedo realizar una celebración, comunión o evento en el parque?
                 </button>
               </h2>
               <div
-                id="flush-collapseOne"
+                id="flush-collapseFive"
                 class="accordion-collapse collapse"
-                aria-labelledby="flush-headingOne"
+                aria-labelledby="flush-headingFive"
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
@@ -255,41 +255,41 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footerUno">
-        <div class="footerDentroUno">
-          <img src="../img/logo.png" alt="logo" class="logoFooter" />
+    <footer class="footer mx-2">
+      
+      <div class="footerIzquierda my-2">
+        <div class="footerIzquierdaDentro text-secondary">
+          <h4>Nosotros</h4>
+          <p>V a D desde las 10 hs hasta las 19hs.</p>
+          <p class="text-center">Atención teléfonica de L a J de 10hs a 14 hs y 17hs a 19hs.</p>
           <p>Calle Comedias s/n, 29130, Alhaurín de la Torre, Málaga.</p>
-          <h4>Horario de Apertura:</h4>
-          <p>
-            Lunes a jueves: 10:00 a 14:00 y de 17:00 a 19:00 Viernes a domingo:
-            10:00 - 19:00.
-          </p>
         </div>
       </div>
 
-      <div class="footerDos">
-        <div class="footerDentroDos">
-          <h3 class="nosotrosFooter">Nosotros</h3>
-          <a href="">Políticas de privacidad</a>
-          <a href="">Términos y condiciones</a>
-          <a href="">Políticas de cookies</a>
-          <a href="">Aviso legal</a>
-          <a href="">Nosotros</a>
+      <div class="footerCentro my-2">
+        <div class="footerCentroDentro text-secondary text-decoration-none">
+          <h4>Legales</h4>
+          <a class="text-decoration-none text-secondary" href="">Políticas de privacidad</a>
+          <a class="text-decoration-none text-secondary" href="">Términos y condiciones</a>
+          <a class="text-decoration-none text-secondary" href="">Políticas de cookies</a>
+          <a class="text-decoration-none text-secondary" href="">Aviso legal</a>
+          <a class="text-decoration-none text-secondary" href="">Nosotros</a>
         </div>
       </div>
 
-      <div class="footerTres">
-        <div class="footerDentroTres">
-          <h3 class="contactoFooter">Contacto</h3>
+      <div class="footerDerecha my-2">
+        <div class="footerDerechaDentro text-secondary">
+          <h4>Contacto</h4>
           <p>Info@sunviewpark.com</p>
           <p>+34 951771171 / 662057414</p>
-        </div>
-        <div class="footerRedes">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
+            <div class="footerRedes">
+              <i class="fab fa-facebook fs-2 mt-2"></i>
+              <i class="fab fa-instagram fs-2 mt-2"></i>
+            </div>
         </div>
       </div>
+
+
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

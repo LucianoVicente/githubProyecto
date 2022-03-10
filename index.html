@@ -24,11 +24,11 @@
   </head>
 
   <body>
-    <header>
+    <header class="mx-2">
       <div class="estiloNav">
         <img src="img/logo.png" alt="LOGO" class="logo" />
 
-        <nav>
+        <nav class="nav">
           <ul class="estiloNavUl">
             <li><a href="index.html">HOME</a></li>
             <li><a href="html/tirolina.html">TIROLINA</a></li>
@@ -66,7 +66,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="mx-2">
       <section class="main">
         <article class="main-bienvenida">
           <h2>Bienvenidos a Sunview Park</h2>
@@ -82,99 +82,112 @@
         </article>
 
         <article class="main-tirolina-foto" data-aos="fade-right">
-          <img src="img/main-tirolina.jpg" alt="tirolina" />
+            <img src="img/main-tirolina.jpg" alt="tirolina" class="img-fluid"/>
+          </div>
         </article>
 
-        <article class="main-tirolina-texto" data-aos="fade-right">
-          <h3>Vuelo por Tirolina</h3>
-          <p>
+        <article class="main-tirolina-superman" data-aos="fade-right">
+          <div class="flex-tirolina container-fluid w-75">
+            <h3 class="text-start">Vuelo por Tirolina</h3>
+            <p class="text-start">
             Con 1350 métros de recorrido, experimenta adrenalina pura en el
             salto individual, o elige un paseo más calmado para apreciar
             nuestras vistas con el salto tándem.
-          </p>
+            </p>
+          </div>
         </article>
 
         <article class="main-caballos-foto" data-aos="fade-left">
-          <img src="img/main2.jpg" alt="paseo" />
+          <img src="img/main2.jpg" alt="paseo" class="img-fluid"/>
         </article>
 
         <article class="main-caballos-texto" data-aos="fade-left">
-          <h3>Paseo a Caballo</h3>
-          <p>
+          <div class="flex-tirolina container-fluid w-75">
+          <h3 class="text-start">Paseo a Caballo</h3>
+          <p class="text-start">
             Una oportunidad única para estar en contacto con la naturaleza y los
             animales. Podrás aprender a montar a caballo bajo el cuidado de
             nuestros instructores.
           </p>
+        </div>
         </article>
 
         <article class="main-bar-foto" data-aos="fade-right">
-          <img src="img/main-bar.png" alt="terraza" />
+          <img src="img/main-bar.png" alt="terraza" class="img-fluid"/>
         </article>
 
         <article class="main-bar-texto" data-aos="fade-right">
-          <h3>Terraza Bar</h3>
-          <p>
+          <div class="flex-tirolina container-fluid w-75">
+          <h3 class="text-start">Terraza Bar</h3>
+          <p class="text-start">
             Vive una especial vélada en nuestra terraza, con unas vistas únicas
             a la bahía de Málaga. Podrás disfrutar de nuestro variado menú de
             comida como también de nuestros cóckteles.
           </p>
         </article>
+      </div>
       </section>
 
       <!-- section comprar tickets inicio-->
-      <section class="main-home-dos" data-aos="fade-up">
-        <article class="main-boton">
-          <h3>Adquiere tus tickets</h3>
-          <p class="parrafo-tickets">
-            * Descuentos: descuento de 5% aplicado a grupos de 6 a 10 personas.
-          </p>
-          <p>* Descuento de 10% a grupos a partir de 10 personas.</p>
-          <button class="boton-reserva">Reservar ahora</button>
-        </article>
+        <section class="overlap-intento my-5">
+          <div class="grid1 d-flex flex-column-md justify-content-center align-items-center">
+            <div>
+              <h3 class="text-start">CONSIGUE TUS ENTRADAS</h3>
+              <h4 class="text-start">Reserva tus tickets</h4>
+              <p class="text-start text-secondary mb-4">Adquiere tu salto tándem o individual. Descuentos a partir de 5 personas.</p>
+              <a class="text-start" href="">Reservar Tickets</a>
+            </div>
+          </div>
 
-        <article class="main-boton-foto">
-          <img src="img/adquiereEntrada.png" alt="adquiere entrada" />
-        </article>
-      </section>
+          <div class="grid2 d-flex flex-row">
+            <div class="overlap1">
+              <img src="img/6.png" alt="" width="400" class="img-fluid">
+            </div>
+
+            <div class="overlap2">
+              
+            </div>
+          </div>
+        </section>
       <!-- section comprar tickets fin-->
 
     </main>
 
-    <footer class="footer">
-      <div class="footerUno">
-        <div class="footerDentroUno">
-          <img src="img/logo.png" alt="logo" class="logoFooter" />
+    <footer class="footer mx-2">
+      
+      <div class="footerIzquierda my-2">
+        <div class="footerIzquierdaDentro text-secondary">
+          <h4>Nosotros</h4>
+          <p>V a D desde las 10 hs hasta las 19hs.</p>
+          <p class="text-center">Atención teléfonica de L a J de 10hs a 14 hs y 17hs a 19hs.</p>
           <p>Calle Comedias s/n, 29130, Alhaurín de la Torre, Málaga.</p>
-          <h4>Horario de Apertura:</h4>
-          <p>
-            Lunes a jueves: 10:00 a 14:00 y de 17:00 a 19:00 Viernes a domingo:
-            10:00 - 19:00.
-          </p>
         </div>
       </div>
 
-      <div class="footerDos">
-        <div class="footerDentroDos">
-          <h3 class="nosotrosFooter">Nosotros</h3>
-          <a href="">Políticas de privacidad</a>
-          <a href="">Términos y condiciones</a>
-          <a href="">Políticas de cookies</a>
-          <a href="">Aviso legal</a>
-          <a href="">Nosotros</a>
+      <div class="footerCentro my-2">
+        <div class="footerCentroDentro text-secondary text-decoration-none">
+          <h4>Legales</h4>
+          <a class="text-decoration-none text-secondary" href="">Políticas de privacidad</a>
+          <a class="text-decoration-none text-secondary" href="">Términos y condiciones</a>
+          <a class="text-decoration-none text-secondary" href="">Políticas de cookies</a>
+          <a class="text-decoration-none text-secondary" href="">Aviso legal</a>
+          <a class="text-decoration-none text-secondary" href="">Nosotros</a>
         </div>
       </div>
 
-      <div class="footerTres">
-        <div class="footerDentroTres">
-          <h3 class="contactoFooter">Contacto</h3>
+      <div class="footerDerecha my-2">
+        <div class="footerDerechaDentro text-secondary">
+          <h4>Contacto</h4>
           <p>Info@sunviewpark.com</p>
           <p>+34 951771171 / 662057414</p>
-        </div>
-        <div class="footerRedes">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
+            <div class="footerRedes">
+              <i class="fab fa-facebook fs-2 mt-2"></i>
+              <i class="fab fa-instagram fs-2 mt-2"></i>
+            </div>
         </div>
       </div>
+
+
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
