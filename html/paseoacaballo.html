@@ -26,7 +26,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
+    <header class="mx-2">
       <div class="estiloNav">
         <img src="../img/logo.png" alt="LOGO" class="logo" />
 
@@ -44,7 +44,7 @@
       <div class="headerDesign4"></div>
     </header>
 
-    <main>
+    <main class="mx-2">
       <div class="paseo-main">
         <section class="paseo-main-intro">
           <h2>Paseo a caballo</h2>
@@ -92,69 +92,77 @@
           </ul>
         </section>
 
-        <section class="paseo-reserva">
-          <div class="card reserva-caballo" style="width: 18rem;">
-            <div class="card-body">
-              <h3 class="card-title">Haz tu Reserva</h3>
-              <p class="card-text">Gestiona tu cita mediante un correo, indicando día, hora y cantidad de personas.</p>
-              <a href="#" class="btn btn-primary">Completar solicitud</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-caballos-fotos-tickets">
-          <article class="foto-caballos-individual">
-            <h4>Paseo a Caballo</h4>
-            <img src="../img/ticektscab.png" alt="individual" />
-            <h4>35€ por persona</h4>
-          </article>
-
-          <article class="foto-caballos-paquete">
-            <h4>Paseo + Tirolina</h4>
-            <img src="../img/ticketscab2.png" alt="tandem" />
-            <h4>58€ por persona</h4>
-          </article>
-        </section>
       </div>
+
+      <section class="caballos-tickets d-flex my-5">
+          
+        <div class="caballos-tickets-izquierda">
+            <div class="caballo-tickets-texto">
+              <h3>OBTEN TUS TICKETS</h3>
+              <h4>Reserva tu paseo a caballo.</h4>
+              <p>Te ayudamos a organizar la actividad, grupo de máximo 5 personas.</p>
+              <a href="">Reservar Paseo</a>
+           </div>
+        </div>
+
+
+        <div class="caballos-tickets-derecha d-flex gap-5">
+
+          <div class="tickets-caballos d-flex flex-column align-items-center gap-2">
+            <h4>Caballos</h4>
+            <img src="../img/ticektscab.png" alt="">
+            <p>35€</p>
+          </div>
+         
+          <div class="tickets-pack d-flex flex-column align-items-center gap-2">
+            <h4>Caballos + Tirolina</h4>
+            <img src="../img/ticketscab2.png" alt="">
+            <p>58€</p>
+          </div>
+
+        </div>
+        
+      </section>
+
     </main>
 
      <!-- inicio footer -->
 
-    <footer class="footer">
-      <div class="footerUno">
-        <div class="footerDentroUno">
-          <img src="../img/logo.png" alt="logo" class="logoFooter" />
+     <footer class="footer mx-2">
+      
+      <div class="footerIzquierda my-2">
+        <div class="footerIzquierdaDentro text-secondary">
+          <h4>Nosotros</h4>
+          <p>V a D desde las 10 hs hasta las 19hs.</p>
+          <p class="text-center">Atención teléfonica de L a J de 10hs a 14 hs y 17hs a 19hs.</p>
           <p>Calle Comedias s/n, 29130, Alhaurín de la Torre, Málaga.</p>
-          <h4>Horario de Apertura:</h4>
-          <p>
-            Lunes a jueves: 10:00 a 14:00 y de 17:00 a 19:00 Viernes a domingo:
-            10:00 - 19:00.
-          </p>
         </div>
       </div>
 
-      <div class="footerDos">
-        <div class="footerDentroDos">
-          <h3 class="nosotrosFooter">Nosotros</h3>
-          <a href="">Políticas de privacidad</a>
-          <a href="">Términos y condiciones</a>
-          <a href="">Políticas de cookies</a>
-          <a href="">Aviso legal</a>
-          <a href="">Nosotros</a>
+      <div class="footerCentro my-2">
+        <div class="footerCentroDentro text-secondary text-decoration-none">
+          <h4>Legales</h4>
+          <a class="text-decoration-none text-secondary" href="">Políticas de privacidad</a>
+          <a class="text-decoration-none text-secondary" href="">Términos y condiciones</a>
+          <a class="text-decoration-none text-secondary" href="">Políticas de cookies</a>
+          <a class="text-decoration-none text-secondary" href="">Aviso legal</a>
+          <a class="text-decoration-none text-secondary" href="">Nosotros</a>
         </div>
       </div>
 
-      <div class="footerTres">
-        <div class="footerDentroTres">
-          <h3 class="contactoFooter">Contacto</h3>
+      <div class="footerDerecha my-2">
+        <div class="footerDerechaDentro text-secondary">
+          <h4>Contacto</h4>
           <p>Info@sunviewpark.com</p>
           <p>+34 951771171 / 662057414</p>
-        </div>
-        <div class="footerRedes">
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-instagram"></i>
+            <div class="footerRedes">
+              <i class="fab fa-facebook fs-2 mt-2"></i>
+              <i class="fab fa-instagram fs-2 mt-2"></i>
+            </div>
         </div>
       </div>
+
+
     </footer>
 
      <!-- fin footer -->

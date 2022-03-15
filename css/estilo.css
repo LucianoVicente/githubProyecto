@@ -1,1224 +1,948 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-
+  margin: 0;
+  padding: 0; }
 
 /* NAV FIN */
-
-    .estiloNav {
-        background-color: #f5f5f7;
-        height: 250px;
-        position: sticky;
-        top: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1;
-    }
-
-    .estiloNavUl {
-
-        list-style-type: none;
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-        text-align: center;  
-        padding-left: 0rem;
-    }
-    
-    .estiloNavUl li {
-        display: block;
-        padding: 5px;
-    }
-    
-    .estiloNav a {
-        text-decoration: none;
-        color: #014f86;
-    }
-    
-    .logo {
-        height: 50px;
-        width: 75px;
-    }
-
-    .estiloNav a:hover {
-        color: #f7b53b;
-    }
-
-/* NAV FIN */
-
-/* BANNER PRINCIPAL Y H1 INICIO */
-
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-}
-
-.headerDesign {
-    height: 300px;
-    width: 100%;  
-}
-
-.headerDesign img {
-    height: 300px;
-}
-
-.contenedor-carousel {
-    padding: 0;
-}
-
-.carousel-banner {
-    height: 300px;
-    width: 100%;
-}
-
-/* BANNER PRINCIPAL Y H1 FIN */
-
-/* BANNER TIROLINA Y H1 INICIO */
-
-.headerDesign2 img {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.headerDesign2 {
-    padding: 0;
-}
-
-/* BANNER TIROLINA Y H1 FIN */
-
-/* BANNER TERRAZA Y H1 INICIO */
-
-.headerDesign3 img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.headerDesign3 {
-    padding: 0;
-}
-
-/* BANNER TERRAZA Y H1 FIN */
-
-/* BANNER CABALLOS Y H1 INICIO */
-
-.headerDesign4 {
-    background-image: url(../IMG/bannerCaballos.png);
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* BANNER CABALLOS Y H1 FIN */
-
-/* BANNER CONTACTO Y H1 INICIO */
-
-.headerDesign5 {
-    background-image: url(../IMG/bannerContacto.png);
-    height: 300px;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* BANNER CONTACTO Y H1 FIN */
-
-
-/* INICIO MAIN HOME */
-
-.main {
-    height: 2600px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a1"
-                         "a3"
-                         "a2"
-                         "a4"
-                         "a5"
-                         "a7"
-                         "a6";
-
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-bienvenida {
-    grid-area: a1;
-    text-align: center;
-    width: 75%;
-    margin-bottom: 2rem;
-}
-
-.main-bienvenida h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5rem;
-}
-
-
-.main-bienvenida-h4 {
-    color: #014f86;
-    font-weight: normal;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    margin-top: 1rem;
-}
-
-.main-bienvenida-parrafo {
-    color: #b1a7a6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 2rem;
-    font-weight: 100;
-    
-}
-
-.main-bienvenida-parrafo-dos {
-    color: #b1a7a6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 2rem;
-    font-weight: 100;
-}
-
-.main-tirolina-foto {
-    grid-area: a3;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-tirolina-superman {
-    grid-area: a2;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-caballos-foto {
-    grid-area: a4;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-caballos-texto {
-    grid-area: a5;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-bar-foto {
-    grid-area: a7;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-bar-texto {
-    grid-area: a6;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-
-.main h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    font-size: 25px;
-}
-
-.main p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 1rem;
-}
-
-.main img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 3px solid;
-    color: #f5f5f7;
-}
-/* FIN MAIN HOME */
-
-/* INICIO MAIN 2 HOME */
-
-.overlap-intento {
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr  1fr;
-    grid-template-areas: "a1"
-                         "a2";
-    height: 600px;
-    justify-items: center;
-    align-content: space-between;
-    justify-content: center;
-}
-
-.grid1 {
-    width: 75%;
-    grid-area: a2;
-}
-
-.grid2 {
-    grid-area: a1;
-}
-
-.overlap2 {
-    height: 350px;
-    width: 350px;
-    background-color: #f5f5f7;
-    border-radius: 2%;
-}
-
-.overlap1 {
-    margin-right: -300px;
-    margin-top: 40px;
-    z-index: 1;
-}
-
-.overlap1 img {
-    border-radius: 2%;
-}
-
-.overlap-intento {
-    font-family: 'Roboto', sans-serif;
-}
-
-.overlap-intento h3 {
-    color: #014f86;
-}
-
-.overlap-intento a {
-    text-decoration: none;
-    background-color: #f7b53b;
-    color: white;
-    padding: 10px 10px;
-}
-
-/* FIN MAIN 2 HOME */
-
-/* MAIN TIROLINA INICIO */
-
-.main-tirolina-salto {
-    background-image: url(../img/individual1.png);
-    height: 300px;
-    width: 80%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.main-tirolina-tandem {
-    background-image: url(../img/tandem2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 80%;
-}
-
-.main-tirolina-texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    justify-content: center;
-}
-
-.main-div-tirolina {
-    height: 250px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-tirolina-intro {
-    width: 80%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.main-tirolina-intro h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.main-tirolina-intro p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 15px;
-}
-
-.main-tirolina {
-    height: 1800px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:  1.5fr 0.75fr 0.5fr;
-    grid-template-areas: "a6"
-                         "a7"
-                         "a8";
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
-}
-
-.main-tirolina-requisitos {
-    grid-area: a6;
-    width: 75%;
-}
-
-.main-tirolina-tickets {
-    grid-area: a7;
-    width: 75%;
-    text-align: center;
-}
-
-.card-tickets {
-    border: none;
-}
-
-.main-tirolina-fotos-tickets {
-    grid-area: a8;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 50%;
-    align-items: center;
-    justify-items:flex-start;
-}
-
-.foto-tickets-individual {
-    height: 50%;
-    width: 50%;
-}
-
-.foto-tickets-tandem {
-    height: 50%;
-    width: 50%;
-}
-
-.main-tirolina-fotos-tickets h3 {
-    text-align: center;
-    color: #014f86;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 1rem;
-    font-size: 25px;
-}
-
-.main-tirolina-fotos-tickets h4 {
-    text-align: center;
-    color: #014f86;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 1.5rem;
-    font-size: 20px;
-}
-
-
-.main-tirolina p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 1rem;
-}
-
-.main-tirolina h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5rem;
-    text-align: center;
-}
-
-.main-tirolina img {
-    height: 100%;
-    width: 100%;
-}
-
-.main-tirolina h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    font-size: 25px;
-}
-
-.ul-tirolina {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    font-size: 15px;
-    margin-top: 2rem;
-}
-
-.ul-tirolina-dos {
-    margin-left: 2rem;
-}
-
-.ul-tirolina li {
-    margin-top: 0.5rem;
-}
-
-/* MAIN TIROLINA FIN */
-
-/* INICIO MAIN CABALLOS MOBILE */
-
-.paseo-main {
-    height: 2200px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1.5fr 1.5fr;
-    justify-content: space-between;
-    grid-template-areas:    "a1"
-                            "a2"
-                            "a3"
-                            "a4"
-                            "a5";
-    align-items: center;    
-    align-content: center; 
-    justify-items: center;
-
-}
-
-.paseo-main-intro {
-    grid-area: a1;
-    width: 75%;
-    margin-bottom: 2rem;
-}
-
-.paseo-main h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.paseo-main p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 1rem;
-}
-
-.paseo-main img {
-    height: 100%;
-    width: 100%;
-}
-
-.paseo-imagen-uno {
-    grid-area: a2;
-    width: 50%;
-}
-
-.paseo-main-requisitos {
-    grid-area: a3;
-    width: 50%;
-    margin-top: 5rem;
-}
-
-.ul-caballos {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    font-size: 15px;
-    margin-top: 2rem;
-}
-
-.ul-caballos li {
-    margin-top: 0.5rem;
-}
-
-.paseo-main h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    font-size: 25px;
-}
-
-.paseo-main h4 {
-    color: #014f86;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin: 1rem 0;
-    text-align: center;
-}
-.paseo-reserva {
-    grid-area: a4;
-    width: 75%;
-    text-align: center;
-}
-
-.boton-caballos {
-    margin: 2rem;
-    outline: none; 
-    border: none;
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    background-color: #f7b53b;
-    font-size: 20px;
-    padding: 1rem;
-}
-
-.main-caballos-fotos-tickets {
-    grid-area: a5;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.foto-caballos-individual {
-    height: 50%;
-    width: 50%;
-}
-
-.foto-caballos-paquete {
-    height: 50%;
-    width: 50%;
-}
-/* FIN MAIN CABALLOS MOBILE */
-
-/* INICIO MAIN TERRAZA MOBILE */
-
-.main-terraza {
-    height: 3000px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3"
-                         "a4"
-                         "a5"
-                         "a6"
-                         "a7"
-                         "a8"
-                         "a9"
-                         "a10";
-    justify-items: center;
-}
-
-.div-desayunos {
-    display: none;
-}
-
-.div-restaurante {
-    display: none;
-}
-
-.main-terraza-intro {
-    grid-area: a1;
-    width: 80%;  
-}
-
-.main-terraza-desayunos {
-    grid-area: a2;
-    width: 80%;
-    background-image: url(../img/fotodesa.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.main-terraza-desayunos-texto {
-    grid-area: a3;
-}
-
-.main-terraza-restaurante-texto {
-    grid-area: a5;
-}
-
-.main-terraza-copas-texto {
-    grid-area: a7;
-}
-
-.main-terraza-postres-texto {
-    grid-area: a9;
-}
-
-.main-terraza-food {
-    grid-area: a4;
-    width: 80%;
-    background-image: url(../img/fotorest.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.main-terraza-bebidas {
-    grid-area: a6;
-    width: 80%;
-    background-image: url(../img/fotocopas.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.main-terraza-postres {
-    grid-area: a8;
-    width: 80%;
-    background-image: url(../img/fotopostre.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.main-terraza-eventos {
-    grid-area: a10;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-terraza-texto-mobile {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.main-terraza-texto-mobile a {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    font-size: 15px;
-}
-
-.main-terraza p {
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.main-terraza h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 3rem;
-    text-align: center;
-}
-
-.main-terraza h3 {
-    text-align: center;
-    color: #014f86;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-}
-
-.main-terraza button {
-    margin: 3rem 0;
-}
-
-/* FIN MAIN TERRAZA MOBILE */
-
-/* MAIN FORM INICIO MOBILE */
-
-.intro-contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.intro-contacto h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5rem;
-    text-align: center;
-}
-
-.intro-contacto p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 20px;
-    width: 75%;
-}
-
-.main-contacto-grid {
-   display: grid;
-   grid-template-columns: 100%;
-   grid-template-rows: 1fr 1fr;
-   width: 100%;
-   align-items: center;
-   justify-items: center;
-   margin: 2rem 0;
-   gap: 2rem;
-}
-
-.main-contacto-grid h3 {
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.main-contacto-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.main-contacto-izquierda {
-    width: 75%;
-}
-
-.main-contacto-derecha {
-    width: 75%;
-    margin-bottom: 2rem;
-}
-
-.main-contacto-grid ul {
-    list-style-type: none;
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 1rem;
-}
-
-.input-nombre {
-    border: none;
-    background-color: #edede9;
-    height: 2rem;
-    padding-left: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.input-email {
-    border: none;
-    background-color: #edede9;
-    height: 2rem;
-    padding-left: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.input-telefono {
-    border: none;
-    background-color: #edede9;
-    height: 2rem;
-    padding-left: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.input-consulta {
-    border: none;
-    background-color: #edede9;
-    padding-left: 1rem;
-    padding-top: 0.5rem;
-    font-family: 'Roboto', sans-serif;
-}
-
-.input-boton {
-    border: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: white;
-    background-color: #f7b53b;
-    border-radius: 2px;
-    width: 50%;
-    padding: 0.7rem;
-}
-
-.input-boton:hover {
-    color: #014f86;
-}
-
-/* MAIN FORM FIN MOBILE */
-
-/* INICIO FAQ */
-
-.acordion {
-    width: 100%;
-}
-
-.faq {
-    margin: 2rem
-}
-
-.faq button {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.faq h3 {
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.accordion-body {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    font-size: 20px;
-    margin-top: 1rem;
-}
-
-/* FIN FAQ */
-
-/* INICIO MAPA CONTACTO */
-
-.div-mapa {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 400px;
-    align-items: center; 
-}
-
-.mapa {
-    width: 80%;
-    height: 80%;  
-    margin-bottom: 2rem; 
-}
-
-.div-mapa h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-/* FIN MAPA CONTACTO */
-
-/* FOOTER INICIO */
-
-.footer {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3";
-    background-color: #f5f5f7;
-}
-
-.footerIzquierda {
-    grid-area: a1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.footerCentro {
-    grid-area: a2;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.footerDerecha {
-    grid-area: a3;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.footerIzquierdaDentro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footerCentroDentro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footerDerechaDentro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.footer a {
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.footer h4 {
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* FOOTER FIN */
-
-
-/* NAV Y LOGO INICIO COMPUTADORA */
-
-@media only screen and ( min-width: 601px){
-
 .estiloNav {
-    height: 150px;
-    flex-direction: row;
-}
+  background-color: #f5f5f7;
+  height: 250px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1; }
 
 .estiloNavUl {
-    font-size: 15px;
-    text-align: right;      
-    margin-right: 2rem;
-}
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding-left: 0rem; }
 
 .estiloNavUl li {
-    display: inline-block;
-    padding: 10px;
-}
+  display: block;
+  padding: 5px; }
+
+.estiloNav a {
+  text-decoration: none;
+  color: #014f86; }
 
 .logo {
-    height: 100px;
-    width: 150px; 
-    margin-left: 2rem;
-}
+  height: 50px;
+  width: 75px; }
 
-/* NAV Y LOGO FIN COMPUTADORA */
+.estiloNav a:hover {
+  color: #f7b53b; }
 
-/* BANNER PRINCIPAL Y H1 INICIO COMPUTADORA */
-
+/* NAV FIN */
+/* BANNER PRINCIPAL Y H1 INICIO */
 h1 {
-    font-size: 700;
-}
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 900; }
 
 .headerDesign {
-    height: 500px;
-}
+  height: 300px;
+  width: 100%; }
 
 .headerDesign img {
-    height: 500px;
-}
+  height: 300px; }
+
+.contenedor-carousel {
+  padding: 0; }
 
 .carousel-banner {
-    height: 500px;
-    width: 100%;
-}
+  height: 300px;
+  width: 100%; }
 
-/* BANNER PRINCIPAL Y H1 FIN COMPUTADORA */
-
+/* BANNER PRINCIPAL Y H1 FIN */
 /* BANNER TIROLINA Y H1 INICIO */
-
 .headerDesign2 img {
-    height: 500px;
-}
+  height: 300px;
+  width: 100%;
+  object-fit: cover; }
+
+.headerDesign2 {
+  padding: 0; }
 
 /* BANNER TIROLINA Y H1 FIN */
-
 /* BANNER TERRAZA Y H1 INICIO */
-
 .headerDesign3 img {
-    height: 500px;
-}
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+
+.headerDesign3 {
+  padding: 0; }
 
 /* BANNER TERRAZA Y H1 FIN */
-
 /* BANNER CABALLOS Y H1 INICIO */
-
 .headerDesign4 {
-    height: 500px;
-}
+  background-image: url(../IMG/bannerCaballos.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* BANNER CABALLOS Y H1 FIN */
-
 /* BANNER CONTACTO Y H1 INICIO */
-
 .headerDesign5 {
-    height: 500px;
-}
+  background-image: url(../IMG/bannerContacto.png);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* BANNER CONTACTO Y H1 FIN */
+/* INICIO MAIN HOME */
+.main {
+  height: 2600px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a1" "a3" "a2" "a4" "a5" "a7" "a6";
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center; }
 
-/* INICIO MAIN */
+.main-bienvenida {
+  grid-area: a1;
+  text-align: center;
+  width: 75%;
+  margin-bottom: 2rem; }
 
-.main { 
+.main-bienvenida h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5rem; }
+
+.main-bienvenida-h4 {
+  color: #014f86;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 1rem; }
+
+.main-bienvenida-parrafo {
+  color: #b1a7a6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 2rem;
+  font-weight: 100; }
+
+.main-bienvenida-parrafo-dos {
+  color: #b1a7a6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: 2rem;
+  font-weight: 100; }
+
+.main-tirolina-foto {
+  grid-area: a3;
+  width: 75%;
+  align-items: center;
+  justify-items: center; }
+
+.main-tirolina-superman {
+  grid-area: a2;
+  width: 100%;
+  align-items: center;
+  justify-items: center; }
+
+.main-caballos-foto {
+  grid-area: a4;
+  width: 75%;
+  align-items: center;
+  justify-items: center; }
+
+.main-caballos-texto {
+  grid-area: a5;
+  width: 100%;
+  align-items: center;
+  justify-items: center; }
+
+.main-bar-foto {
+  grid-area: a7;
+  width: 75%;
+  align-items: center;
+  justify-items: center; }
+
+.main-bar-texto {
+  grid-area: a6;
+  width: 100%;
+  align-items: center;
+  justify-items: center; }
+
+.main h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #014f86;
+  text-align: center;
+  font-size: 25px; }
+
+.main p {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1rem; }
+
+.main img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid;
+  color: #f5f5f7; }
+
+/* FIN MAIN HOME */
+/* INICIO MAIN 2 HOME */
+.overlap-intento {
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 1fr  1fr;
+  grid-template-areas: "a1" "a2";
+  height: 600px;
+  justify-items: center;
+  align-content: space-between;
+  justify-content: center; }
+
+.grid1 {
+  width: 75%;
+  grid-area: a2; }
+
+.grid2 {
+  grid-area: a1; }
+
+.overlap2 {
+  height: 350px;
+  width: 350px;
+  background-color: #f5f5f7;
+  border-radius: 2%; }
+
+.overlap1 {
+  margin-right: -300px;
+  margin-top: 40px;
+  z-index: 1; }
+
+.overlap1 img {
+  border-radius: 2%; }
+
+.overlap-intento {
+  font-family: 'Roboto', sans-serif; }
+
+.overlap-intento h3 {
+  color: #014f86; }
+
+.overlap-intento a {
+  text-decoration: none;
+  background-color: #f7b53b;
+  color: white;
+  padding: 10px 10px; }
+
+/* FIN MAIN 2 HOME */
+/* MAIN TIROLINA INICIO */
+.main-tirolina-salto {
+  background-image: url(../img/individual1.png);
+  height: 300px;
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.main-tirolina-tandem {
+  background-image: url(../img/tandem2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 80%; }
+
+.main-tirolina-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  justify-content: center; }
+
+.main-div-tirolina {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-tirolina-intro {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem; }
+
+.main-tirolina-intro h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif; }
+
+.main-tirolina-intro p {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  text-align: center;
+  font-size: 15px; }
+
+.main-tirolina {
+  height: 1800px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1.5fr 0.75fr 0.5fr;
+  grid-template-areas: "a6" "a7" "a8";
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; }
+
+.main-tirolina-requisitos {
+  grid-area: a6;
+  width: 75%; }
+
+.main-tirolina-tickets {
+  grid-area: a7;
+  width: 75%;
+  text-align: center; }
+
+.card-tickets {
+  border: none; }
+
+.main-tirolina-fotos-tickets {
+  grid-area: a8;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+  align-items: center;
+  justify-items: flex-start; }
+
+.foto-tickets-individual {
+  height: 50%;
+  width: 50%; }
+
+.foto-tickets-tandem {
+  height: 50%;
+  width: 50%; }
+
+.main-tirolina-fotos-tickets h3 {
+  text-align: center;
+  color: #014f86;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 25px; }
+
+.main-tirolina-fotos-tickets h4 {
+  text-align: center;
+  color: #014f86;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1.5rem;
+  font-size: 20px; }
+
+.main-tirolina p {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 1rem; }
+
+.main-tirolina h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5rem;
+  text-align: center; }
+
+.main-tirolina img {
+  height: 100%;
+  width: 100%; }
+
+.main-tirolina h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #014f86;
+  text-align: center;
+  font-size: 25px; }
+
+.ul-tirolina {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  font-size: 15px;
+  margin-top: 2rem; }
+
+.ul-tirolina-dos {
+  margin-left: 2rem; }
+
+.ul-tirolina li {
+  margin-top: 0.5rem; }
+
+/* MAIN TIROLINA FIN */
+/* INICIO MAIN CABALLOS MOBILE */
+.paseo-main {
+  height: 1800px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-template-areas: "a1" "a2" "a3";
+  align-items: center;
+  align-content: center;
+  justify-items: center; }
+
+.paseo-main-intro {
+  grid-area: a1;
+  width: 75%;
+  margin-bottom: 2rem; }
+
+.paseo-main h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+
+.paseo-main p {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 1rem; }
+
+.paseo-main img {
+  height: 100%;
+  width: 100%; }
+
+.paseo-imagen-uno {
+  grid-area: a2;
+  width: 80%; }
+
+.paseo-main-requisitos {
+  grid-area: a3;
+  width: 75%;
+  margin-top: 5rem; }
+
+.ul-caballos {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  font-size: 20px;
+  margin-top: 2rem; }
+
+.ul-caballos li {
+  margin-top: 0.5rem; }
+
+.paseo-main h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #014f86;
+  text-align: center;
+  font-size: 25px; }
+
+.paseo-main h4 {
+  color: #014f86;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin: 1rem 0;
+  text-align: center; }
+
+/* SASS */
+.caballos-tickets {
+  flex-direction: column;
+  gap: 2rem; }
+
+.caballos-tickets-izquierda {
+  display: flex;
+  flex-direction: row; }
+  .caballos-tickets-izquierda .caballo-tickets-texto h3 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: start; }
+  .caballos-tickets-izquierda .caballo-tickets-texto h4 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: start; }
+  .caballos-tickets-izquierda .caballo-tickets-texto p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6;
+    width: 100%; }
+  .caballos-tickets-izquierda .caballo-tickets-texto a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #f7b53b;
+    padding: 10px 10px; }
+
+.caballos-tickets-derecha {
+  flex-direction: column; }
+  .caballos-tickets-derecha img {
+    border-radius: 50%; }
+  .caballos-tickets-derecha h4 {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: start; }
+  .caballos-tickets-derecha p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6; }
+
+/* FIN MAIN CABALLOS MOBILE */
+/* INICIO MAIN TERRAZA MOBILE */
+.main-terraza {
+  height: 3000px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9" "a10";
+  justify-items: center; }
+
+.div-desayunos {
+  display: none; }
+
+.div-restaurante {
+  display: none; }
+
+.main-terraza-intro {
+  grid-area: a1;
+  width: 80%; }
+
+.main-terraza-desayunos {
+  grid-area: a2;
+  width: 80%;
+  background-image: url(../img/fotodesa.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.main-terraza-desayunos-texto {
+  grid-area: a3; }
+
+.main-terraza-restaurante-texto {
+  grid-area: a5; }
+
+.main-terraza-copas-texto {
+  grid-area: a7; }
+
+.main-terraza-postres-texto {
+  grid-area: a9; }
+
+.main-terraza-food {
+  grid-area: a4;
+  width: 80%;
+  background-image: url(../img/fotorest.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.main-terraza-bebidas {
+  grid-area: a6;
+  width: 80%;
+  background-image: url(../img/fotocopas.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.main-terraza-postres {
+  grid-area: a8;
+  width: 80%;
+  background-image: url(../img/fotopostre.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.main-terraza-eventos {
+  grid-area: a10;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-terraza-texto-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; }
+
+.main-terraza-texto-mobile a {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  font-size: 15px; }
+
+.main-terraza p {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  text-align: center;
+  margin-top: 1rem; }
+
+.main-terraza h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 3rem;
+  text-align: center; }
+
+.main-terraza h3 {
+  text-align: center;
+  color: #014f86;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px; }
+
+.main-terraza button {
+  margin: 3rem 0; }
+
+/* FIN MAIN TERRAZA MOBILE */
+/* MAIN FORM INICIO MOBILE */
+.intro-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 100%; }
+
+.intro-contacto h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5rem;
+  text-align: center; }
+
+.intro-contacto p {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  text-align: center;
+  font-size: 20px;
+  width: 75%; }
+
+.main-contacto-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin: 2rem 0;
+  gap: 2rem; }
+
+.main-contacto-grid h3 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #014f86;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.main-contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.main-contacto-izquierda {
+  width: 75%; }
+
+.main-contacto-derecha {
+  width: 75%;
+  margin-bottom: 2rem; }
+
+.main-contacto-grid ul {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 1rem; }
+
+.input-nombre {
+  border: none;
+  background-color: #edede9;
+  height: 2rem;
+  padding-left: 1rem;
+  font-family: 'Roboto', sans-serif; }
+
+.input-email {
+  border: none;
+  background-color: #edede9;
+  height: 2rem;
+  padding-left: 1rem;
+  font-family: 'Roboto', sans-serif; }
+
+.input-telefono {
+  border: none;
+  background-color: #edede9;
+  height: 2rem;
+  padding-left: 1rem;
+  font-family: 'Roboto', sans-serif; }
+
+.input-consulta {
+  border: none;
+  background-color: #edede9;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-family: 'Roboto', sans-serif; }
+
+.input-boton {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #f7b53b;
+  border-radius: 2px;
+  width: 50%;
+  padding: 0.7rem; }
+
+.input-boton:hover {
+  color: #014f86; }
+
+/* MAIN FORM FIN MOBILE */
+/* INICIO FAQ */
+.acordion {
+  width: 100%; }
+
+.faq {
+  margin: 2rem; }
+
+.faq button {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; }
+
+.faq h3 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #014f86;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.accordion-body {
+  font-family: 'Roboto', sans-serif;
+  color: #b1a7a6;
+  font-size: 20px;
+  margin-top: 1rem; }
+
+/* FIN FAQ */
+/* INICIO MAPA CONTACTO */
+.div-mapa {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  align-items: center; }
+
+.mapa {
+  width: 80%;
+  height: 80%;
+  margin-bottom: 2rem; }
+
+.div-mapa h2 {
+  color: #014f86;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+/* FIN MAPA CONTACTO */
+/* FOOTER INICIO */
+.footer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a1" "a2" "a3";
+  background-color: #f5f5f7; }
+
+.footerIzquierda {
+  grid-area: a1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.footerCentro {
+  grid-area: a2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.footerDerecha {
+  grid-area: a3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+.footerIzquierdaDentro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.footerCentroDentro {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footerDerechaDentro {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer p {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
+
+.footer a {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
+
+.footer h4 {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif; }
+
+/* FOOTER FIN */
+/* NAV Y LOGO INICIO COMPUTADORA */
+@media only screen and (min-width: 601px) {
+  .estiloNav {
+    height: 150px;
+    flex-direction: row; }
+  .estiloNavUl {
+    font-size: 15px;
+    text-align: right;
+    margin-right: 2rem; }
+  .estiloNavUl li {
+    display: inline-block;
+    padding: 10px; }
+  .logo {
+    height: 100px;
+    width: 150px;
+    margin-left: 2rem; }
+  /* NAV Y LOGO FIN COMPUTADORA */
+  /* BANNER PRINCIPAL Y H1 INICIO COMPUTADORA */
+  h1 {
+    font-size: 700; }
+  .headerDesign {
+    height: 500px; }
+  .headerDesign img {
+    height: 500px; }
+  .carousel-banner {
+    height: 500px;
+    width: 100%; }
+  /* BANNER PRINCIPAL Y H1 FIN COMPUTADORA */
+  /* BANNER TIROLINA Y H1 INICIO */
+  .headerDesign2 img {
+    height: 500px; }
+  /* BANNER TIROLINA Y H1 FIN */
+  /* BANNER TERRAZA Y H1 INICIO */
+  .headerDesign3 img {
+    height: 500px; }
+  /* BANNER TERRAZA Y H1 FIN */
+  /* BANNER CABALLOS Y H1 INICIO */
+  .headerDesign4 {
+    height: 500px; }
+  /* BANNER CABALLOS Y H1 FIN */
+  /* BANNER CONTACTO Y H1 INICIO */
+  .headerDesign5 {
+    height: 500px; }
+  /* BANNER CONTACTO Y H1 FIN */
+  /* INICIO MAIN */
+  .main {
     height: 1800px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 300px 350px 350px 350px;
-    grid-template-areas: "a1 a1"
-                         "a2 a3"
-                         "a4 a5"
-                         "a6 a7";
-    align-content: space-around;
-}
-
-.main-bienvenida {
-    width: 80%;
-}
-
-.main-bienvenida h2 {
-    font-size: 45px;
-}
-
-.main-bienvenida-h4 {
+    grid-template-areas: "a1 a1" "a2 a3" "a4 a5" "a6 a7";
+    align-content: space-around; }
+  .main-bienvenida {
+    width: 80%; }
+  .main-bienvenida h2 {
+    font-size: 45px; }
+  .main-bienvenida-h4 {
     font-size: 25px;
-    margin-top: 0,5rem;
-}
-
-.main-bienvenida-parrafo {
-    font-size: 20px; 
-}
-
-.main-bienvenida-parrafo-dos {
-    font-size: 20px;
-}
-
-.main-tirolina-superman {
+    margin-top: 0,5rem; }
+  .main-bienvenida-parrafo {
+    font-size: 20px; }
+  .main-bienvenida-parrafo-dos {
+    font-size: 20px; }
+  .main-tirolina-superman {
     background-color: #f5f5f7;
     height: 100%;
     width: 100%;
     display: flex;
-    border-radius: 2%;
-}
-
-.main-caballos-texto {
+    border-radius: 2%; }
+  .main-caballos-texto {
     background-color: #f5f5f7;
     height: 100%;
     width: 100%;
     display: flex;
-    border-radius: 2%;
-}
-
-.main-bar-texto {
+    border-radius: 2%; }
+  .main-bar-texto {
     background-color: #f5f5f7;
     height: 100%;
     width: 100%;
     display: flex;
-    border-radius: 2%;
-}
-
-.main img {
+    border-radius: 2%; }
+  .main img {
     height: 350px;
     border-radius: 50%;
     border: 3px solid;
-    color: #f5f5f7;
-}
-
-.main-tirolina-foto {
-    width: 50%;
-}
-
-.main-caballos-foto {
-    width: 50%;
-}
-
-.main-bar-foto {
-    width: 50%;
-}
-
-.main h3 {
-    font-size: 30px;
-}
-
-.main p {
-    font-size: 20px;
-}
-/* FIN MAIN */
-
-/* INICIO MAIN 2 HOME*/
-
-.overlap-intento {
+    color: #f5f5f7; }
+  .main-tirolina-foto {
+    width: 50%; }
+  .main-caballos-foto {
+    width: 50%; }
+  .main-bar-foto {
+    width: 50%; }
+  .main h3 {
+    font-size: 30px; }
+  .main p {
+    font-size: 20px; }
+  /* FIN MAIN */
+  /* INICIO MAIN 2 HOME*/
+  .overlap-intento {
     grid-template-columns: 55% 45%;
     grid-template-rows: 100%;
     grid-template-areas: "a1 a2";
     height: 400px;
     justify-items: normal;
     align-content: normal;
-    justify-content: normal;
-}
-
-.grid1 {
+    justify-content: normal; }
+  .grid1 {
     width: 100%;
-    grid-area: a1;
-}
-
-.grid2 {
-    grid-area: a2;
-}
-
-.overlap2 {
+    grid-area: a1; }
+  .grid2 {
+    grid-area: a2; }
+  .overlap2 {
     height: 350px;
     width: 350px;
     background-color: #f5f5f7;
-    border-radius: 2%;
-}
-
-.overlap1 {
+    border-radius: 2%; }
+  .overlap1 {
     margin-right: -300px;
     margin-top: 40px;
-    z-index: 1;
-}
-
-
-/* FIN MAIN 2 HOME */
-
-/* MAIN TIROLINA INICIO */
-
-.main-tirolina-texto {
-    display: none;
-}
-
-.main-tirolina-salto {
+    z-index: 1; }
+  /* FIN MAIN 2 HOME */
+  /* MAIN TIROLINA INICIO */
+  .main-tirolina-texto {
+    display: none; }
+  .main-tirolina-salto {
     height: 650px;
-    width: 100% ;
+    width: 100%;
     background-image: url(../img/individual1.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: end;
-}
-
-.carta-individual {
-    margin-right: 5rem;
-}
-
-.main-tirolina-tandem {
+    justify-content: end; }
+  .carta-individual {
+    margin-right: 5rem; }
+  .main-tirolina-tandem {
     background-image: url(../img/tandem2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1226,224 +950,148 @@ h1 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
-}
-
-.carta-tandem {
-    margin-left: 5rem;
-}
-
-.main-tirolina-intro {
-    height: 300px;
-}
-
-.main-tirolina-intro h2 {
-    font-size: 45px;
-}
-
-.main-tirolina-intro p {
-    font-size: 20px; 
-}
-
-.main-tirolina-salto {
-    background-image: url(../img/individual1.png);
-}
-
-.main-tirolina-tandem {
-    background-image: url(../img/tandem2.png);
-}
-
-
-.main-tirolina {
+    justify-content: start; }
+  .carta-tandem {
+    margin-left: 5rem; }
+  .main-tirolina-intro {
+    height: 300px; }
+  .main-tirolina-intro h2 {
+    font-size: 45px; }
+  .main-tirolina-intro p {
+    font-size: 20px; }
+  .main-tirolina-salto {
+    background-image: url(../img/individual1.png); }
+  .main-tirolina-tandem {
+    background-image: url(../img/tandem2.png); }
+  .main-tirolina {
     height: 1200px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1.5fr 1fr;
-    grid-template-areas: "a6 a6"
-                         "a7 a8";
-    justify-content: space-evenly;
-}
-
-.main-tirolina-requisitos {
-    width: 60%;
-}
-
-.main-tirolina-tickets {
-    width: 50%;
-}
-
-.main-tirolina-fotos-tickets {
+    grid-template-areas: "a6 a6" "a7 a8";
+    justify-content: space-evenly; }
+  .main-tirolina-requisitos {
+    width: 60%; }
+  .main-tirolina-tickets {
+    width: 50%; }
+  .main-tirolina-fotos-tickets {
     flex-direction: row;
     gap: 2rem;
-    width: 80%;
-}
-
-.foto-tickets-individual {
+    width: 80%; }
+  .foto-tickets-individual {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.foto-tickets-tandem {
+    align-items: center; }
+  .foto-tickets-tandem {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.main-tirolina-fotos-tickets h3 {
-    font-size: 30px;
-}
-
-.main-tirolina-fotos-tickets h4 {
-    font-size: 30px;
-}
-
-
-.main-tirolina p {
-    font-size: 20px;
-}
-
-.main-tirolina h2 {
-    font-size: 45px;
-}
-
-.main-tirolina h3 {
-    font-size: 30px;
-}
-
-.ul-tirolina {
-    font-size: 20px;
-}
-
-/* GALERIA TIROLINA INICIO */
-
-.section-carousel {
+    align-items: center; }
+  .main-tirolina-fotos-tickets h3 {
+    font-size: 30px; }
+  .main-tirolina-fotos-tickets h4 {
+    font-size: 30px; }
+  .main-tirolina p {
+    font-size: 20px; }
+  .main-tirolina h2 {
+    font-size: 45px; }
+  .main-tirolina h3 {
+    font-size: 30px; }
+  .ul-tirolina {
+    font-size: 20px; }
+  /* GALERIA TIROLINA INICIO */
+  .section-carousel {
     height: 500px;
     width: 100%;
     display: flex;
-    align-items: center;
-}
-
-.carousel-galeria {
+    align-items: center; }
+  .carousel-galeria {
     display: flex;
-    justify-content: center;
-}
-.carousel-tirolina {
+    justify-content: center; }
+  .carousel-tirolina {
     height: 405px;
-    width: 605px;
-}
-
-/* GALERIA TIROLINA FIN */
-
-/* MAIN TIROLINA FIN */
-
-/* INICIO MAIN CABALLOS PC */
-
-.paseo-main {
+    width: 605px; }
+  /* GALERIA TIROLINA FIN */
+  /* MAIN TIROLINA FIN */
+  /* INICIO MAIN CABALLOS PC */
+  .paseo-main {
+    height: 2000px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1.5fr 1.5fr 1fr;
-    grid-template-areas:    "a1 a1"
-                            "a2 a2"
-                            "a3 a3"
-                            "a4 a5";
-    
-}
-
-.paseo-main h2 {
-    font-size: 45px;
-}
-
-.paseo-main p {
-    font-size: 20px;
-}
-
-.paseo-main img {
-    margin: 1rem 0;
-}
-
-.paseo-imagen-uno {
+    grid-template-rows: 1fr 1.5fr 1.5fr;
+    grid-template-areas: "a1 a1" "a2 a2" "a3 a3"; }
+  .paseo-main h2 {
+    font-size: 45px; }
+  .paseo-main p {
+    font-size: 20px; }
+  .paseo-main img {
+    margin: 1rem 0; }
+  .paseo-imagen-uno {
     width: 80%;
-    height: 100%;
-}
-
-.paseo-main-requisitos {
-    width: 60%;
-}
-
-.ul-caballos {
-    font-size: 20px;
-}
-
-.paseo-main h3 {
+    height: 100%; }
+  .paseo-main-requisitos {
+    width: 75%; }
+  .ul-caballos {
+    font-size: 20px; }
+  .paseo-main h3 {
+    font-size: 30px; }
+  .paseo-main h4 {
+    font-size: 20px; }
+  /* PRUEBA SASS PC */
+  .caballos-tickets {
+    justify-content: space-evenly;
+    flex-direction: row; }
+  .caballos-tickets-izquierda h3 {
     font-size: 30px;
-}
-
-.paseo-main h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #014f86;
+    text-align: start; }
+  .caballos-tickets-izquierda h4 {
     font-size: 20px;
-}
-.paseo-reserva {
-    grid-area: a4;
-}
-
-.reserva-caballo {
-    margin: 0;
-}
-
-.main-caballos-fotos-tickets {
-    grid-area: a5;
-    flex-direction: row;
-    width: 50%;
-    height: 100%;
-    justify-content: center;
-}
-
-.foto-caballos-individual {
-    width: 300px;
-    height: 300px;
-}
-
-.foto-caballos-paquete {
-    width: 300px;
-    height: 300px;
-}
-
-.main-caballos-fotos-tickets img {
-    width: 180px;
-    height: 180px;
-}
-/* FIN MAIN CABALLOS PC */
-
-/* INICIO MAIN TERRAZA PC */
-
-.main-terraza {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: start; }
+  .caballos-tickets-izquierda p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #b1a7a6; }
+  .caballos-tickets-izquierda a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: #f7b53b;
+    padding: 10px 10px; }
+  .caballos-tickets-derecha {
+    flex-direction: row; }
+    .caballos-tickets-derecha img {
+      border-radius: 50%; }
+    .caballos-tickets-derecha h4 {
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #014f86;
+      text-align: start; }
+    .caballos-tickets-derecha p {
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #b1a7a6; }
+  /* FIN PRUEBA SASS PC */
+  /* FIN MAIN CABALLOS PC */
+  /* INICIO MAIN TERRAZA PC */
+  .main-terraza {
     height: 4000px;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3"
-                         "a4"
-                         "a5"
-                         "a6";
-    justify-content: center;
-}
-
-.main-terraza-intro {
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6";
+    justify-content: center; }
+  .main-terraza-intro {
     width: 80%;
-    margin-top: 2rem;
-}
-
-.main-terraza-intro p {
+    margin-top: 2rem; }
+  .main-terraza-intro p {
     font-size: 25px;
-    margin-top: 2rem;
-}
-.main-terraza-desayunos {
+    margin-top: 2rem; }
+  .main-terraza-desayunos {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
-}
-
-.div-desayunos {
+    justify-content: end; }
+  .div-desayunos {
     height: 350px;
     width: 350px;
     background-color: #233d4d;
@@ -1452,179 +1100,113 @@ h1 {
     color: #011627;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.main-terraza-food {
+    align-items: center; }
+  .main-terraza-food {
     grid-area: a3;
     width: 100%;
     display: flex;
-    align-items: center;
-}
-
-.div-restaurante {
+    align-items: center; }
+  .div-restaurante {
     height: 350px;
     width: 350px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin-left: 7rem;
     border: 5px solid;
     color: #011627;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.div-restaurante p {
-    color: #233d4d; 
+    align-items: center; }
+  .div-restaurante p {
+    color: #233d4d;
     font-size: 20px;
     width: 65%;
-    margin-top: 1rem;
-}
-
-.main-terraza-bebidas {
+    margin-top: 1rem; }
+  .main-terraza-bebidas {
     grid-area: a4;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
-}
-
-.main-terraza-postres {
+    justify-content: end; }
+  .main-terraza-postres {
     grid-area: a5;
     width: 100%;
     display: flex;
-    align-items: center;
-}
-
-.main-terraza-eventos {
+    align-items: center; }
+  .main-terraza-eventos {
     grid-area: a6;
-    margin-top: 2rem;
-}
-
-.main-terraza-eventos p {
+    margin-top: 2rem; }
+  .main-terraza-eventos p {
     font-size: 22px;
-    margin-top: 2rem;
-}
-
-.div-desayunos p {
+    margin-top: 2rem; }
+  .div-desayunos p {
     font-size: 20px;
     width: 70%;
     color: white;
-    margin-top: 1rem;
-}
-
-.main-terraza h2 {
-    font-size: 45px;
-}
-
-.div-desayunos h3 {
+    margin-top: 1rem; }
+  .main-terraza h2 {
+    font-size: 45px; }
+  .div-desayunos h3 {
     margin-top: 3rem;
     font-size: 30px;
-    color: white;
-}
-
-.div-restaurante h3 {
+    color: white; }
+  .div-restaurante h3 {
     margin-top: 3rem;
     font-size: 30px;
+    color: #233d4d; }
+  .a-izq {
     color: #233d4d;
-}
-
-.a-izq {
-    color: #233d4d; 
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.a-der {
-    color: white; 
+    font-family: 'Roboto', sans-serif; }
+  .a-der {
+    color: white;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.main-terraza-texto-mobile {
-    display: none;
-}
-
-/* FIN MAIN TERRAZA PC */
-fcca46
-/* MAIN FORM INICIO PC */
-
+    font-family: 'Roboto', sans-serif; }
+  .main-terraza-texto-mobile {
+    display: none; }
+  /* FIN MAIN TERRAZA PC */
+  fcca46
 .intro-contacto h2 {
-    font-size: 45px;
-}
-
-.intro-contacto p {
+    font-size: 45px; }
+  .intro-contacto p {
     font-size: 20px;
-    width: 100%;
-}
-
-.main-contacto-grid {
-   grid-template-columns: 45% 45%;
-   grid-template-rows: 1fr;
-   align-items:flex-start;
-}
-
-.main-contacto-grid h3 {
-    font-size: 30px;
-}
-
-.main-contacto-izquierda {
-    width: 80%;
-}
-
-.main-contacto-grid ul {
-    font-size: 20px;
-}
-
-.input-boton {
-    width: 40%; 
+    width: 100%; }
+  .main-contacto-grid {
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr;
+    align-items: flex-start; }
+  .main-contacto-grid h3 {
+    font-size: 30px; }
+  .main-contacto-izquierda {
+    width: 80%; }
+  .main-contacto-grid ul {
+    font-size: 20px; }
+  .input-boton {
+    width: 40%;
     padding: 0.7rem;
-    font-size: 15px;
-}
-
-/* INICIO FAQ */
-
-.acordion {
-    width: 50%;
-}
-
-.faq h3 {
-    font-size: 30px;
-}
-
-.accordion-body {
-    font-size: 15px;
-}
-
-.faq button {
+    font-size: 15px; }
+  /* INICIO FAQ */
+  .acordion {
+    width: 50%; }
+  .faq h3 {
+    font-size: 30px; }
+  .accordion-body {
+    font-size: 15px; }
+  .faq button {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-/* MAIN FORM FIN PC */
-
-/* FOOTER INICIO */
-
-.footer {
+    font-size: 20px; }
+  /* MAIN FORM FIN PC */
+  /* FOOTER INICIO */
+  .footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
-    grid-template-areas: "a1 a2 a3";
-
-}
-
-.footerIzquierda {
+    grid-template-areas: "a1 a2 a3"; }
+  .footerIzquierda {
     grid-area: a1;
-    align-items: start;
-}
-
-.footerCentro {
+    align-items: start; }
+  .footerCentro {
     grid-area: a2;
-    align-items: start;
-}
-
-.footerDerecha {
+    align-items: start; }
+  .footerDerecha {
     grid-area: a3;
-    align-items: start;
-}
-/* FOOTER FIN */
-}
+    align-items: start; }
+  /* FOOTER FIN */ }
