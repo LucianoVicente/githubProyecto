@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 /* NAV FIN */
 
     .estiloNav {
@@ -50,13 +49,6 @@
 
 /* BANNER PRINCIPAL Y H1 INICIO */
 
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-}
-
 .headerDesign {
     height: 300px;
     width: 100%;  
@@ -79,14 +71,12 @@ h1 {
 
 /* BANNER TIROLINA Y H1 INICIO */
 
-.headerDesign2 img {
+.headerDesign2 {
+    background-image: url(../img/bannerTirolina.png);
     height: 300px;
     width: 100%;
-    object-fit: cover;
-}
-
-.headerDesign2 {
-    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* BANNER TIROLINA Y H1 FIN */
@@ -94,9 +84,7 @@ h1 {
 /* BANNER TERRAZA Y H1 INICIO */
 
 .headerDesign3 img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+    background-image: url(../img/bannerTirolina.png);
 }
 
 .headerDesign3 {
@@ -108,7 +96,7 @@ h1 {
 /* BANNER CABALLOS Y H1 INICIO */
 
 .headerDesign4 {
-    background-image: url(../IMG/bannerCaballos.png);
+    background-image: url(../img/bannerCaballos.png);
     height: 300px;
     width: 100%;
     background-size: cover;
@@ -120,7 +108,7 @@ h1 {
 /* BANNER CONTACTO Y H1 INICIO */
 
 .headerDesign5 {
-    background-image: url(../IMG/bannerContacto.png);
+    background-image: url(../img/bannerContacto.png);
     height: 300px;
     width: 100%;
     background-size: cover;
@@ -133,7 +121,7 @@ h1 {
 /* INICIO MAIN HOME */
 
 .main {
-    height: 2600px;
+    height: 2400px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 0.7fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -148,113 +136,120 @@ h1 {
     justify-content: space-around;
     align-items: center;
     justify-items: center;
-}
 
-.main-bienvenida {
-    grid-area: a1;
-    text-align: center;
-    width: 75%;
-    margin-bottom: 2rem;
-}
+    .main-texto {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
 
-.main-bienvenida h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5rem;
-}
+    .main-bienvenida {
+   
+        grid-area: a1;
+        width: 90%;
+        margin-bottom: 2rem;
 
+    p {
+        @extend .main-texto;
+        color: #b1a7a6;
+        font-size: 20px;
+        margin-top: 2rem;
+        font-weight: 100;
+    }
 
-.main-bienvenida-h4 {
-    color: #014f86;
-    font-weight: normal;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    margin-top: 1rem;
-}
+    h2 {
+        @extend .main-texto;
+        color: #014f86;
+        font-weight: 900;
+        font-size: 30px;
+        margin-top: 5rem;
+    }
 
-.main-bienvenida-parrafo {
-    color: #b1a7a6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 2rem;
-    font-weight: 100;
+    h4 {
+        @extend .main-texto;
+        color: #014f86;
+        font-weight: normal;
+        font-size: 25px;
+        margin-top: 1rem;
+    }
+
+    .main-bienvenida-parrafo-dos {
+        @extend .main-texto;
+        color: #b1a7a6;
+        font-size: 20px;
+            margin-top: 2rem;
+            font-weight: 100;
+        }
+    }
+
+    .main-fotos {
+        width: 75%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main-texto-home {
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main-tirolina-foto {
+        @extend .main-fotos;
+        grid-area: a3;
+    }
+
+    .main-tirolina-superman {
+        grid-area: a2;
+        @extend .main-texto-home;
+    }
+
+    .main-caballos-foto {
+        grid-area: a4;
+        @extend .main-fotos;
+    }
+
+    .main-caballos-texto {
+        grid-area: a5;
+        @extend .main-texto-home;
+        font-size: 'Roboto', sans-serif;
+    }
+
+    .main-bar-foto {
+        grid-area: a7;
+        @extend .main-fotos;
+    }
+
+    .main-bar-texto {
+        grid-area: a6;
+        @extend .main-texto-home;
+    }
     
+    h3 {
+        font-size: 'Roboto', sans-serif;
+        text-align: center;
+        color: #014f86;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 'Roboto', sans-serif;
+        text-align: center;
+        color: #b1a7a6;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+    
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%; 
+        border: 3px solid;
+        color: #f5f5f7;
+    }
 }
 
-.main-bienvenida-parrafo-dos {
-    color: #b1a7a6;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 2rem;
-    font-weight: 100;
-}
-
-.main-tirolina-foto {
-    grid-area: a3;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-tirolina-superman {
-    grid-area: a2;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-caballos-foto {
-    grid-area: a4;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-caballos-texto {
-    grid-area: a5;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-bar-foto {
-    grid-area: a7;
-    width: 75%;
-    align-items: center;
-    justify-items: center;
-}
-
-.main-bar-texto {
-    grid-area: a6;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-}
-
-
-.main h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    font-size: 25px;
-}
-
-.main p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 1rem;
-}
-
-.main img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 3px solid;
-    color: #f5f5f7;
+.flex-tirolina {
+    width: 90%;
 }
 /* FIN MAIN HOME */
 
@@ -262,87 +257,63 @@ h1 {
 
 .overlap-intento {
     display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: 1fr  1fr;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: "a1"
                          "a2";
-    height: 600px;
+    height: 500px;
     justify-items: center;
     align-content: space-between;
     justify-content: center;
 }
 
 .grid1 {
-    width: 75%;
+    width: 90%;
     grid-area: a2;
 }
 
 .grid2 {
     grid-area: a1;
-}
+    width: 90%;
+    display: flex;
+    align-items: center;
 
-.overlap2 {
-    height: 350px;
-    width: 350px;
-    background-color: #f5f5f7;
-    border-radius: 2%;
-}
-
-.overlap1 {
-    margin-right: -300px;
-    margin-top: 40px;
-    z-index: 1;
-}
-
-.overlap1 img {
-    border-radius: 2%;
+    img {
+        border-radius: 2%;
+        border: 5px solid;
+        color: #f5f5f7;
+        height: 80%;
+        width: 100%;
+    }
 }
 
 .overlap-intento {
+    
     font-family: 'Roboto', sans-serif;
-}
 
-.overlap-intento h3 {
-    color: #014f86;
-}
-
-.overlap-intento a {
-    text-decoration: none;
-    background-color: #f7b53b;
-    color: white;
-    padding: 10px 10px;
+    h3 {
+        color: #014f86;
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    a {
+        text-decoration: none;
+        background-color: #f7b53b;
+        color: white;
+        padding: 10px 10px;
+    }
 }
 
 /* FIN MAIN 2 HOME */
 
 /* MAIN TIROLINA INICIO */
 
-.main-tirolina-salto {
-    background-image: url(../img/individual1.png);
-    height: 300px;
-    width: 80%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.main-tirolina-tandem {
-    background-image: url(../img/tandem2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 300px;
-    width: 80%;
-}
-
-.main-tirolina-texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    justify-content: center;
-}
-
 .main-div-tirolina {
-    height: 250px;
+    height: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -350,7 +321,7 @@ h1 {
 }
 
 .main-tirolina-intro {
-    width: 80%;
+    width: 90%;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -363,125 +334,164 @@ h1 {
     font-weight: 900;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
+    margin-top: 7rem;
+    text-align: center;
 }
 
 .main-tirolina-intro p {
-    font-family: 'Roboto', sans-serif;
     color: #b1a7a6;
-    text-align: center;
-    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.tirolina {
+    
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+    .salto-individual {
+        height: 150px;
+        width: 100%;
+    }
+
+    .salto-tandem {
+        height: 150px;
+        width: 100%;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 2%;
+        border: 3px solid;
+        color: #f5f5f7;
+    }
+
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        color: #014f86;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        color: #b1a7a6;
+        text-align: left;
+        font-size: 20px;
+        margin-top: 1rem;
+
+    }
 }
 
 .main-tirolina {
-    height: 1800px;
+    height: 2500px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows:  1.5fr 0.75fr 0.5fr;
-    grid-template-areas: "a6"
-                         "a7"
-                         "a8";
+    grid-template-rows:  1.5fr 1fr 1fr;
+    grid-template-areas: "a3"
+                         "a4"
+                         "a5";
     align-content: center;
     justify-content: center;
     align-items: center;
     justify-items: center;
 
+    .main-tirolina-requisitos {
+        grid-area: a3;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        color: #014f86;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .ul-tirolina {
+        font-family: 'Roboto', sans-serif;
+        color: #b1a7a6;
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+    
+    .ul-tirolina-dos {
+        margin-left: 2rem;
+    }
+    
+    li {
+        margin-top: 0.5rem;
+    }
+
+    .main-tirolina-tickets {
+
+        .main-tirolina-tickets-texto {
+
+            width: 250px;
+            
+            @mixin texto-tickets ($fontSize, $color){
+                font-size: $fontSize;
+                color: $color;
+                font-family: 'Roboto', sans-serif;
+            }
+            h3 {
+                @include texto-tickets(20px, #014f86)
+            }
+
+            h4 {
+                @include texto-tickets(20px, black)
+            }
+
+            p {
+                @include texto-tickets(15px, #b1a7a6)
+            }
+
+            a {
+                @include texto-tickets(15px, white);
+                text-decoration: none;
+                background-color: #f7b53b;
+                padding: 10px 10px;
+            }
+        } 
+    }
+
+    .main-tirolina-fotos-tickets {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        img {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+        }
+
+        .tickets-superman {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tickets-tandem {
+            width: 100%;
+            height: 100%;
+        }
+
+        h4 {
+            color: #014f86;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
 }
 
-.main-tirolina-requisitos {
-    grid-area: a6;
-    width: 75%;
-}
 
-.main-tirolina-tickets {
-    grid-area: a7;
-    width: 75%;
-    text-align: center;
-}
-
-.card-tickets {
-    border: none;
-}
-
-.main-tirolina-fotos-tickets {
-    grid-area: a8;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 50%;
-    align-items: center;
-    justify-items:flex-start;
-}
-
-.foto-tickets-individual {
-    height: 50%;
-    width: 50%;
-}
-
-.foto-tickets-tandem {
-    height: 50%;
-    width: 50%;
-}
-
-.main-tirolina-fotos-tickets h3 {
-    text-align: center;
-    color: #014f86;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 1rem;
-    font-size: 25px;
-}
-
-.main-tirolina-fotos-tickets h4 {
-    text-align: center;
-    color: #014f86;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 1.5rem;
-    font-size: 20px;
-}
-
-
-.main-tirolina p {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    text-align: center;
-    font-size: 15px;
-    margin-top: 1rem;
-}
-
-.main-tirolina h2 {
-    color: #014f86;
-    font-weight: 900;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 5rem;
-    text-align: center;
-}
-
-.main-tirolina img {
-    height: 100%;
-    width: 100%;
-}
-
-.main-tirolina h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #014f86;
-    text-align: center;
-    font-size: 25px;
-}
-
-.ul-tirolina {
-    font-family: 'Roboto', sans-serif;
-    color: #b1a7a6;
-    font-size: 15px;
-    margin-top: 2rem;
-}
-
-.ul-tirolina-dos {
-    margin-left: 2rem;
-}
-
-.ul-tirolina li {
-    margin-top: 0.5rem;
-}
 
 /* MAIN TIROLINA FIN */
 
@@ -566,8 +576,6 @@ h1 {
     text-align: center;
 }
 
-/* SASS */
-
 .caballos-tickets {
     flex-direction: column;
     gap: 2rem;
@@ -598,6 +606,7 @@ h1 {
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
             color: #b1a7a6;
+            text-align: start;
             width: 100%;
         }
 
@@ -605,6 +614,7 @@ h1 {
             font-family: 'Roboto', sans-serif;
             text-decoration: none;
             color: white;
+            text-align: start;
             background-color: #f7b53b;
             padding: 10px 10px;
         }
@@ -1022,673 +1032,6 @@ h1 {
 
 /* FOOTER FIN */
 
-
-/* NAV Y LOGO INICIO COMPUTADORA */
-
-@media only screen and ( min-width: 601px){
-
-.estiloNav {
-    height: 150px;
-    flex-direction: row;
-}
-
-.estiloNavUl {
-    font-size: 15px;
-    text-align: right;      
-    margin-right: 2rem;
-}
-
-.estiloNavUl li {
-    display: inline-block;
-    padding: 10px;
-}
-
-.logo {
-    height: 100px;
-    width: 150px; 
-    margin-left: 2rem;
-}
-
-/* NAV Y LOGO FIN COMPUTADORA */
-
-/* BANNER PRINCIPAL Y H1 INICIO COMPUTADORA */
-
-h1 {
-    font-size: 700;
-}
-
-.headerDesign {
-    height: 500px;
-}
-
-.headerDesign img {
-    height: 500px;
-}
-
-.carousel-banner {
-    height: 500px;
-    width: 100%;
-}
-
-/* BANNER PRINCIPAL Y H1 FIN COMPUTADORA */
-
-/* BANNER TIROLINA Y H1 INICIO */
-
-.headerDesign2 img {
-    height: 500px;
-}
-
-/* BANNER TIROLINA Y H1 FIN */
-
-/* BANNER TERRAZA Y H1 INICIO */
-
-.headerDesign3 img {
-    height: 500px;
-}
-
-/* BANNER TERRAZA Y H1 FIN */
-
-/* BANNER CABALLOS Y H1 INICIO */
-
-.headerDesign4 {
-    height: 500px;
-}
-
-/* BANNER CABALLOS Y H1 FIN */
-
-/* BANNER CONTACTO Y H1 INICIO */
-
-.headerDesign5 {
-    height: 500px;
-}
-
-/* BANNER CONTACTO Y H1 FIN */
-
-/* INICIO MAIN */
-
-.main { 
-    height: 1800px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 350px 350px 350px;
-    grid-template-areas: "a1 a1"
-                         "a2 a3"
-                         "a4 a5"
-                         "a6 a7";
-    align-content: space-around;
-}
-
-.main-bienvenida {
-    width: 80%;
-}
-
-.main-bienvenida h2 {
-    font-size: 45px;
-}
-
-.main-bienvenida-h4 {
-    font-size: 25px;
-    margin-top: 0,5rem;
-}
-
-.main-bienvenida-parrafo {
-    font-size: 20px; 
-}
-
-.main-bienvenida-parrafo-dos {
-    font-size: 20px;
-}
-
-.main-tirolina-superman {
-    background-color: #f5f5f7;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    border-radius: 2%;
-}
-
-.main-caballos-texto {
-    background-color: #f5f5f7;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    border-radius: 2%;
-}
-
-.main-bar-texto {
-    background-color: #f5f5f7;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    border-radius: 2%;
-}
-
-.main img {
-    height: 350px;
-    border-radius: 50%;
-    border: 3px solid;
-    color: #f5f5f7;
-}
-
-.main-tirolina-foto {
-    width: 50%;
-}
-
-.main-caballos-foto {
-    width: 50%;
-}
-
-.main-bar-foto {
-    width: 50%;
-}
-
-.main h3 {
-    font-size: 30px;
-}
-
-.main p {
-    font-size: 20px;
-}
-/* FIN MAIN */
-
-/* INICIO MAIN 2 HOME*/
-
-.overlap-intento {
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 100%;
-    grid-template-areas: "a1 a2";
-    height: 400px;
-    justify-items: normal;
-    align-content: normal;
-    justify-content: normal;
-}
-
-.grid1 {
-    width: 100%;
-    grid-area: a1;
-}
-
-.grid2 {
-    grid-area: a2;
-}
-
-.overlap2 {
-    height: 350px;
-    width: 350px;
-    background-color: #f5f5f7;
-    border-radius: 2%;
-}
-
-.overlap1 {
-    margin-right: -300px;
-    margin-top: 40px;
-    z-index: 1;
-}
-
-
-/* FIN MAIN 2 HOME */
-
-/* MAIN TIROLINA INICIO */
-
-.main-tirolina-texto {
-    display: none;
-}
-
-.main-tirolina-salto {
-    height: 650px;
-    width: 100% ;
-    background-image: url(../img/individual1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.carta-individual {
-    margin-right: 5rem;
-}
-
-.main-tirolina-tandem {
-    background-image: url(../img/tandem2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 650px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-
-.carta-tandem {
-    margin-left: 5rem;
-}
-
-.main-tirolina-intro {
-    height: 300px;
-}
-
-.main-tirolina-intro h2 {
-    font-size: 45px;
-}
-
-.main-tirolina-intro p {
-    font-size: 20px; 
-}
-
-.main-tirolina-salto {
-    background-image: url(../img/individual1.png);
-}
-
-.main-tirolina-tandem {
-    background-image: url(../img/tandem2.png);
-}
-
-
-.main-tirolina {
-    height: 1200px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1.5fr 1fr;
-    grid-template-areas: "a6 a6"
-                         "a7 a8";
-    justify-content: space-evenly;
-}
-
-.main-tirolina-requisitos {
-    width: 60%;
-}
-
-.main-tirolina-tickets {
-    width: 50%;
-}
-
-.main-tirolina-fotos-tickets {
-    flex-direction: row;
-    gap: 2rem;
-    width: 80%;
-}
-
-.foto-tickets-individual {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.foto-tickets-tandem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-tirolina-fotos-tickets h3 {
-    font-size: 30px;
-}
-
-.main-tirolina-fotos-tickets h4 {
-    font-size: 30px;
-}
-
-.main-tirolina p {
-    font-size: 20px;
-}
-
-.main-tirolina h2 {
-    font-size: 45px;
-}
-
-.main-tirolina h3 {
-    font-size: 30px;
-}
-
-.ul-tirolina {
-    font-size: 20px;
-}
-
-/* GALERIA TIROLINA INICIO */
-
-.section-carousel {
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.carousel-galeria {
-    display: flex;
-    justify-content: center;
-}
-.carousel-tirolina {
-    height: 405px;
-    width: 605px;
-}
-
-/* GALERIA TIROLINA FIN */
-
-/* MAIN TIROLINA FIN */
-
-/* INICIO MAIN CABALLOS PC */
-
-.paseo-main {
-    height: 2000px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1.5fr 1.5fr;
-    grid-template-areas:    "a1 a1"
-                            "a2 a2"
-                            "a3 a3";
-    
-}
-
-.paseo-main h2 {
-    font-size: 45px;
-}
-
-.paseo-main p {
-    font-size: 20px;
-}
-
-.paseo-main img {
-    margin: 1rem 0;
-}
-
-.paseo-imagen-uno {
-    width: 80%;
-    height: 100%;
-}
-
-.paseo-main-requisitos {
-    width: 75%;
-}
-
-.ul-caballos {
-    font-size: 20px;
-}
-
-.paseo-main h3 {
-    font-size: 30px;
-}
-
-.paseo-main h4 {
-    font-size: 20px;
-}
-/* PRUEBA SASS PC */
-
-.caballos-tickets {
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.caballos-tickets-izquierda {
-    
-
-    h3 {
-        font-size: 30px;
-        font-family: 'Roboto', sans-serif;
-        color: #014f86;
-        text-align: start;
-    }
-
-    h4 {
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        color: black;
-        text-align: start;
-    }
-
-    p {
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        color: #b1a7a6;
-    }
-
-    a {
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        color: white;
-        background-color: #f7b53b;
-        padding: 10px 10px;
-    }
-}
-
-.caballos-tickets-derecha {
-
-    flex-direction: row;
-
-    img {
-        border-radius: 50%;
-    }
-
-    h4 {
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        color: #014f86;
-        text-align: start;
-    }
-
-    p {
-        font-size: 20px;
-        font-family: 'Roboto', sans-serif;
-        color: #b1a7a6;
-    }
-}
-
-
-
-/* FIN PRUEBA SASS PC */
-
-/* FIN MAIN CABALLOS PC */
-
-/* INICIO MAIN TERRAZA PC */
-
-.main-terraza {
-    height: 4000px;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-areas: "a1"
-                         "a2"
-                         "a3"
-                         "a4"
-                         "a5"
-                         "a6";
-    justify-content: center;
-}
-
-.main-terraza-intro {
-    width: 80%;
-    margin-top: 2rem;
-}
-
-.main-terraza-intro p {
-    font-size: 25px;
-    margin-top: 2rem;
-}
-.main-terraza-desayunos {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.div-desayunos {
-    height: 350px;
-    width: 350px;
-    background-color: #233d4d;
-    margin-right: 7rem;
-    border: 5px solid;
-    color: #011627;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-terraza-food {
-    grid-area: a3;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.div-restaurante {
-    height: 350px;
-    width: 350px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 7rem;
-    border: 5px solid;
-    color: #011627;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.div-restaurante p {
-    color: #233d4d; 
-    font-size: 20px;
-    width: 65%;
-    margin-top: 1rem;
-}
-
-.main-terraza-bebidas {
-    grid-area: a4;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.main-terraza-postres {
-    grid-area: a5;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.main-terraza-eventos {
-    grid-area: a6;
-    margin-top: 2rem;
-}
-
-.main-terraza-eventos p {
-    font-size: 22px;
-    margin-top: 2rem;
-}
-
-.div-desayunos p {
-    font-size: 20px;
-    width: 70%;
-    color: white;
-    margin-top: 1rem;
-}
-
-.main-terraza h2 {
-    font-size: 45px;
-}
-
-.div-desayunos h3 {
-    margin-top: 3rem;
-    font-size: 30px;
-    color: white;
-}
-
-.div-restaurante h3 {
-    margin-top: 3rem;
-    font-size: 30px;
-    color: #233d4d;
-}
-
-.a-izq {
-    color: #233d4d; 
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.a-der {
-    color: white; 
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.main-terraza-texto-mobile {
-    display: none;
-}
-
-/* FIN MAIN TERRAZA PC */
-fcca46
-/* MAIN FORM INICIO PC */
-
-.intro-contacto h2 {
-    font-size: 45px;
-}
-
-.intro-contacto p {
-    font-size: 20px;
-    width: 100%;
-}
-
-.main-contacto-grid {
-   grid-template-columns: 45% 45%;
-   grid-template-rows: 1fr;
-   align-items:flex-start;
-}
-
-.main-contacto-grid h3 {
-    font-size: 30px;
-}
-
-.main-contacto-izquierda {
-    width: 80%;
-}
-
-.main-contacto-grid ul {
-    font-size: 20px;
-}
-
-.input-boton {
-    width: 40%; 
-    padding: 0.7rem;
-    font-size: 15px;
-}
-
-/* INICIO FAQ */
-
-.acordion {
-    width: 50%;
-}
-
-.faq h3 {
-    font-size: 30px;
-}
-
-.accordion-body {
-    font-size: 15px;
-}
-
-.faq button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-/* MAIN FORM FIN PC */
-
-/* FOOTER INICIO */
-
-.footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: "a1 a2 a3";
-
-}
-
-.footerIzquierda {
-    grid-area: a1;
-    align-items: start;
-}
-
-.footerCentro {
-    grid-area: a2;
-    align-items: start;
-}
-
-.footerDerecha {
-    grid-area: a3;
-    align-items: start;
-}
-/* FOOTER FIN */
-}
+@import "query-min-481.scss";
+@import "query-min-769.scss";
+@import "query-min-1025.scss";

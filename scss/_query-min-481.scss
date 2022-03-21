@@ -1,0 +1,220 @@
+
+/* NAV Y LOGO INICIO COMPUTADORA */
+
+@media (min-width: 481px) and (max-width: 768px) {
+   
+    .estiloNav {
+        height: 150px;
+        flex-direction: column;
+    }
+    
+    .estiloNavUl {
+        font-size: 15px;
+        text-align: right;      
+    }
+    
+    .estiloNavUl li {
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .logo {
+        height: 75px;
+        width: 100px; 
+    }
+    /* NAV Y LOGO FIN MEDIA */
+
+    .main img {
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        border: 3px solid;
+        color: #f5f5f7;
+    }
+
+    .main-tirolina-foto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-tirolina-superman {
+        width: 80%;
+    }
+
+    .main-caballos-foto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-caballos-texto {
+        width: 80%;
+    }
+
+    .main-bar-foto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-bar-texto {
+        width: 80%;
+    }
+
+    .overlap-intento {
+
+        margin-bottom: 2rem;
+        
+        img {
+            border: 10px solid;
+            width: 80%;
+        }
+
+        .grid2 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid1 {
+            width: 80%;
+            
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+
+            h3 {
+                font-size: 25px;
+            }
+
+            h4 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 15px;
+
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    /* FIN HOME MEDIA */
+
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: "a1 a2 a3";
+    
+        .footerIzquierda {
+            grid-area: a1;
+            align-items: start;
+        }
+        
+        .footerCentro {
+            grid-area: a2;
+            align-items: start;
+        }
+        
+        .footerDerecha {
+            grid-area: a3;
+            align-items: start;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        a {
+            font-size: 12px;
+        }
+    }
+    
+    /* FIN FOOTER MEDIA */
+
+    .main-div-tirolina {
+        height: 450px;
+    }
+
+    .main-tirolina-intro {
+
+        width: 95%;
+
+        h2 {
+            margin-top: 5rem;
+        }
+
+    }
+
+    .tirolina {
+
+        .salto-individual {
+            height: 200px;
+        }
+
+        .salto-tandem {
+            height: 200px;
+        }
+
+        .salto-tandem-texto {
+            
+            span {
+                display: block;
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .main-tirolina {
+
+        height: 2200px;
+
+        .main-tirolina-tickets {
+
+            .main-tirolina-tickets-texto {
+
+                width: 100%;
+        
+                h3 {
+                    font-size: 25px;
+                }
+        
+                h4 {
+                    font-size: 25px;
+                }
+        
+                p {
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        } 
+        
+        .main-tirolina-fotos-tickets {
+
+            img {
+                width: 80%;
+                height: 80%;
+                border-radius: 50%;
+            }
+
+            h4 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+    }
+    
+    /* FIN SECCION TIROLINA MEDIA SIZE */
+}
