@@ -187,7 +187,8 @@
 
 .grid1 {
   width: 90%;
-  grid-area: a2; }
+  grid-area: a2;
+  justify-content: center; }
 
 .grid2 {
   grid-area: a1;
@@ -841,7 +842,8 @@
       justify-content: center;
       align-items: center; }
     .overlap-intento .grid1 {
-      width: 80%; }
+      width: 80%;
+      justify-content: center; }
       .overlap-intento .grid1 div {
         display: flex;
         flex-direction: column;
@@ -1300,16 +1302,21 @@
     display: flex;
     border-radius: 2%; }
   .main img {
-    height: 300px;
-    border-radius: 50%;
-    border: 3px solid;
-    color: #f5f5f7; }
+    height: 70%;
+    width: 70%;
+    text-align: center; }
   .main-tirolina-foto {
-    width: 55%; }
+    width: 100%;
+    display: flex;
+    justify-content: center; }
   .main-caballos-foto {
-    width: 55%; }
+    width: 100%;
+    display: flex;
+    justify-content: center; }
   .main-bar-foto {
-    width: 55%; }
+    width: 100%;
+    display: flex;
+    justify-content: center; }
   .main h3 {
     font-size: 30px; }
   .main p {
@@ -1326,9 +1333,11 @@
     justify-content: normal; }
   .grid1 {
     width: 100%;
-    grid-area: a1; }
+    grid-area: a1;
+    display: flex;
+    justify-content: end; }
     .grid1 div {
-      width: 80%; }
+      width: 75%; }
   .grid2 {
     grid-area: a2;
     width: 100%;
@@ -1345,7 +1354,7 @@
     height: 350px; }
     .main-div-tirolina h2 {
       margin-top: 3rem;
-      font-size: 45px; }
+      font-size: 30px; }
     .main-div-tirolina p {
       margin-bottom: 3rem;
       font-size: 25px; }
@@ -1366,7 +1375,7 @@
       .tirolina .tirolina-articles .salto-tandem {
         height: 400px; }
   .main-tirolina {
-    height: 1400px;
+    height: 1500px;
     display: grid;
     grid-template-columns: 45% 55%;
     grid-template-rows: 1fr 0.5fr;
@@ -1375,7 +1384,7 @@
     /* FIN SECCION TIROLINA XL SIZE */ }
     .main-tirolina .main-tirolina-requisitos {
       grid-area: a1;
-      width: 90%; }
+      width: 70%; }
       .main-tirolina .main-tirolina-requisitos h3 {
         font-size: 30px; }
       .main-tirolina .main-tirolina-requisitos li {
