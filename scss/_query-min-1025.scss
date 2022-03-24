@@ -47,16 +47,23 @@
     
     /* BANNER TIROLINA Y H1 INICIO */
     
-    .headerDesign2 img {
+    .headerDesign2 {
         height: 500px;
+        max-width: 100%;
     }
     
     /* BANNER TIROLINA Y H1 FIN */
     
     /* BANNER TERRAZA Y H1 INICIO */
     
-    .headerDesign3 img {
+    .headerDesign3 {
+        
         height: 500px;
+        width: 100%;
+
+        img {
+        height: 500px;
+        }
     }
     
     /* BANNER TERRAZA Y H1 FIN */
@@ -72,7 +79,13 @@
     /* BANNER CONTACTO Y H1 INICIO */
     
     .headerDesign5 {
+        
         height: 500px;
+        width: 100%;
+
+        img {
+        height: 500px;
+        }
     }
     
     /* BANNER CONTACTO Y H1 FIN */
@@ -316,84 +329,63 @@
     
     /* INICIO MAIN CABALLOS PC */
     
-    .paseo-main {
-        height: 2000px;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1.5fr 1.5fr;
-        grid-template-areas:    "a1 a1"
-                                "a2 a2"
-                                "a3 a3";
-        
-    }
     
-    .paseo-main h2 {
-        font-size: 45px;
-    }
-    
-    .paseo-main p {
-        font-size: 20px;
-    }
-    
-    .paseo-main img {
-        margin: 1rem 0;
-    }
-    
-    .paseo-imagen-uno {
-        width: 80%;
-        height: 100%;
-    }
-    
-    .paseo-main-requisitos {
-        width: 75%;
-    }
-    
-    .ul-caballos {
-        font-size: 20px;
-    }
-    
-    .paseo-main h3 {
-        font-size: 30px;
-    }
-    
-    .paseo-main h4 {
-        font-size: 20px;
-    }
     /* PRUEBA SASS PC */
     
-    .caballos-tickets {
-        justify-content: space-evenly;
-        flex-direction: row;
+    .paseo-main {
+        height: 1600px;
+
+        img {
+            border-radius: 2%;
+            height: 80%;
+            width: 80%;
+        }
+
+        .paseo-main-intro {
+            width: 80%;
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+        }
+
+        .paseo-imagen-uno {
+            display: flex;
+            justify-content: center;
+        }
+
+        .paseo-main-requisitos {
+
+            width: 80%;
+            
+            h3 {
+            font-size: 40px;
+            }
+
+            .ul-caballos {
+                
+                li {
+                    font-size: 22px;
+                }
+            }
+        }
+
+
     }
-    
-    .caballos-tickets-izquierda {
-        
-    
-        h3 {
-            font-size: 30px;
-            font-family: 'Roboto', sans-serif;
-            color: #014f86;
-            text-align: start;
-        }
-    
-        h4 {
-            font-size: 20px;
-            font-family: 'Roboto', sans-serif;
-            color: black;
-            text-align: start;
-        }
-    
-        p {
-            font-size: 20px;
-            font-family: 'Roboto', sans-serif;
-            color: #b1a7a6;
-        }
-    
-        a {
-            font-family: 'Roboto', sans-serif;
-            text-decoration: none;
-            color: white;
-            background-color: #f7b53b;
-            padding: 10px 10px;
+
+    .caballos-tickets {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+
+        .caballos-tickets-izquierda {
+            .caballo-tickets-texto {
+                width: 60%;
+            }
         }
     }
     
@@ -419,17 +411,13 @@
         }
     }
     
-    
-    
-    /* FIN PRUEBA SASS PC */
-    
     /* FIN MAIN CABALLOS PC */
     
     /* INICIO MAIN TERRAZA PC */
     
     .main-terraza {
-        height: 4000px;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+        height: 3700px;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-template-areas: "a1"
                              "a2"
                              "a3"
@@ -437,28 +425,34 @@
                              "a5"
                              "a6";
         justify-content: center;
+
+        .main-terraza-intro {
+            width: 80%;
+            margin-top: 1rem;
+
+            .main-terraza-intro p {
+                font-size: 30px;
+                margin-top: 2rem;
+            }
+
+        }
     }
     
-    .main-terraza-intro {
-        width: 80%;
-        margin-top: 2rem;
-    }
-    
-    .main-terraza-intro p {
-        font-size: 25px;
-        margin-top: 2rem;
-    }
     .main-terraza-desayunos {
+        height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: end;
+        background-size: cover;
+        border-radius: 0%;
     }
     
     .div-desayunos {
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
         background-color: #233d4d;
+        opacity: 0.8;
         margin-right: 7rem;
         border: 5px solid;
         color: #011627;
@@ -470,14 +464,18 @@
     .main-terraza-food {
         grid-area: a3;
         width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
+        background-size: cover;
+        border-radius: 0%;
     }
     
     .div-restaurante {
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
         background-color: rgb(255, 255, 255);
+        opacity: 0.8;
         margin-left: 7rem;
         border: 5px solid;
         color: #011627;
@@ -488,38 +486,45 @@
     
     .div-restaurante p {
         color: #233d4d; 
-        font-size: 20px;
-        width: 65%;
+        font-size: 16px;
+        width: 70%;
         margin-top: 1rem;
     }
     
     .main-terraza-bebidas {
         grid-area: a4;
         width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: end;
+        background-size: cover;
+        border-radius: 0%;
     }
     
     .main-terraza-postres {
         grid-area: a5;
         width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
+        background-size: cover;
+        border-radius: 0%;
     }
     
     .main-terraza-eventos {
         grid-area: a6;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        width: 80%;
     }
     
     .main-terraza-eventos p {
         font-size: 22px;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     
     .div-desayunos p {
-        font-size: 20px;
+        font-size: 16px;
         width: 70%;
         color: white;
         margin-top: 1rem;
@@ -530,26 +535,26 @@
     }
     
     .div-desayunos h3 {
-        margin-top: 3rem;
-        font-size: 30px;
+        margin-top: 2rem;
+        font-size: 25px;
         color: white;
     }
     
     .div-restaurante h3 {
-        margin-top: 3rem;
-        font-size: 30px;
+        margin-top: 2rem;
+        font-size: 25px;
         color: #233d4d;
     }
     
     .a-izq {
         color: #233d4d; 
-        font-size: 20px;
+        font-size: 15px;
         font-family: 'Roboto', sans-serif;
     }
     
     .a-der {
         color: white; 
-        font-size: 20px;
+        font-size: 15px;
         font-family: 'Roboto', sans-serif;
     }
     
@@ -597,7 +602,7 @@
     /* INICIO FAQ */
     
     .acordion {
-        width: 50%;
+        width: 80%;
     }
     
     .faq h3 {
@@ -611,6 +616,10 @@
     .faq button {
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
+    }
+
+    .div-mapa h3 {
+        font-size: 30px;
     }
     
     /* MAIN FORM FIN PC */
