@@ -2,7 +2,10 @@
   margin: 0;
   padding: 0; }
 
-.body {
+html {
+  overflow-x: hidden; }
+
+body {
   overflow-x: hidden; }
 
 /* NAV FIN */
@@ -57,12 +60,12 @@
 
 /* BANNER PRINCIPAL Y H1 FIN */
 /* BANNER TIROLINA Y H1 INICIO */
+.headerDesign2 img {
+  height: 300px; }
+
 .headerDesign2 {
-  background-image: url(../img/bannerTirolina.png);
   height: 300px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  width: 100%; }
 
 /* BANNER TIROLINA Y H1 FIN */
 /* BANNER TERRAZA Y H1 INICIO */
@@ -75,12 +78,12 @@
 
 /* BANNER TERRAZA Y H1 FIN */
 /* BANNER CABALLOS Y H1 INICIO */
+.headerDesign4 img {
+  height: 300px; }
+
 .headerDesign4 {
-  background-image: url(../img/bannerCaballos.png);
   height: 300px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  width: 100%; }
 
 /* BANNER CABALLOS Y H1 FIN */
 /* BANNER CONTACTO Y H1 INICIO */
@@ -180,7 +183,7 @@
   grid-template-columns: 90%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a1" "a2";
-  height: 500px;
+  height: 600px;
   justify-items: center;
   align-content: space-between;
   justify-content: center; }
@@ -1254,7 +1257,9 @@
   /* BANNER TIROLINA Y H1 INICIO */
   .headerDesign2 {
     height: 500px;
-    max-width: 100%; }
+    width: 100%; }
+    .headerDesign2 img {
+      height: 500px; }
   /* BANNER TIROLINA Y H1 FIN */
   /* BANNER TERRAZA Y H1 INICIO */
   .headerDesign3 {
@@ -1265,7 +1270,10 @@
   /* BANNER TERRAZA Y H1 FIN */
   /* BANNER CABALLOS Y H1 INICIO */
   .headerDesign4 {
-    height: 500px; }
+    height: 500px;
+    width: 100%; }
+    .headerDesign4 img {
+      height: 500px; }
   /* BANNER CABALLOS Y H1 FIN */
   /* BANNER CONTACTO Y H1 INICIO */
   .headerDesign5 {
@@ -1281,6 +1289,14 @@
     grid-template-rows: 300px 300px 300px 300px;
     grid-template-areas: "a1 a1" "a2 a3" "a4 a5" "a6 a7";
     align-content: space-around; }
+    .main .main-bienvenida h2 {
+      font-size: 40px; }
+    .main .main-bienvenida p {
+      font-size: 25px; }
+    .main .main-bienvenida h4 {
+      font-size: 30px; }
+    .main .main-bienvenida .main-bienvenida-parrafo-dos {
+      font-size: 25px; }
   .main-tirolina-superman {
     background-color: #f5f5f7;
     height: 100%;
@@ -1424,9 +1440,8 @@
         font-size: 20px; }
   /* MAIN TIROLINA FIN */
   /* INICIO MAIN CABALLOS PC */
-  /* PRUEBA SASS PC */
   .paseo-main {
-    height: 1600px; }
+    height: 1700px; }
     .paseo-main img {
       border-radius: 2%;
       height: 80%;

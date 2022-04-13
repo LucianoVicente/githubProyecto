@@ -48,8 +48,13 @@
     /* BANNER TIROLINA Y H1 INICIO */
     
     .headerDesign2 {
+        
         height: 500px;
-        max-width: 100%;
+        width: 100%;
+
+        img {
+        height: 500px;
+        }
     }
     
     /* BANNER TIROLINA Y H1 FIN */
@@ -71,7 +76,13 @@
     /* BANNER CABALLOS Y H1 INICIO */
     
     .headerDesign4 {
+        
         height: 500px;
+        width: 100%;
+
+        img {
+        height: 500px;
+        }
     }
     
     /* BANNER CABALLOS Y H1 FIN */
@@ -101,7 +112,27 @@
                              "a4 a5"
                              "a6 a7";
         align-content: space-around;
+
+        .main-bienvenida {
+       
+            h2 {
+                font-size: 40px;
+            }
+    
+            p {
+                font-size: 25px;
+            }
+    
+            h4 {
+                font-size: 30px;
+            }
+            
+            .main-bienvenida-parrafo-dos {
+                font-size: 25px;
+            }
+        }
     }
+
     
     .main-tirolina-superman {
         background-color: #f5f5f7;
@@ -336,12 +367,10 @@
     /* MAIN TIROLINA FIN */
     
     /* INICIO MAIN CABALLOS PC */
-    
-    
-    /* PRUEBA SASS PC */
+  
     
     .paseo-main {
-        height: 1600px;
+        height: 1700px;
 
         img {
             border-radius: 2%;
